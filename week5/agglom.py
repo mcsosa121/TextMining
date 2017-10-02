@@ -1,4 +1,4 @@
-a"""
+"""
 
 Today we'll finish up our new corpus and start thinking about clustering.
 Specifically, what are the issues in agglomerative clustering?
@@ -38,6 +38,8 @@ use the structure of our new corpus.
 import re, sys
 import numpy as np
 from collections import Counter
+
+desired_clusters = 40
 
 word_pattern = re.compile("\w[\w\-\']*\w|\w")
 
@@ -129,7 +131,7 @@ for filename in filenames:
     constituent_files.append([filename])
 
 ## Now merge until we have only X nodes left
-while num_nodes < len(filenames) + 100:
+while num_nodes < 2 * len(filenames) - desired_clusters:
     closest_pair = pairwise_distances.pop(0)
 
     file_a = closest_pair[0]
@@ -145,8 +147,10 @@ while num_nodes < len(filenames) + 100:
     parents[file_b] = new_node
 
     ## Remove pairs involving merged nodes
-    pairwise_distances = [x for x in pairwise_distances if x[1] != file_a and x[2] != file_a and x[1] != file_b and x[2] != file_b]
+#    pairwise_distances = [x for x in pairwise_distances if x[1] != file_a and x[2] != file_a and x[1] != file_b and x[2] != file_b]
 
+    pairwise_distances = [x for x in pairwise_distances if x[0] != file_a and x[1] != file_a and x[0] != file_b and x[1] != file_b]
+    
     pairwise_distances.sort(key = lambda x: x[2])
 
     ## Now add the new distances for the merged node
