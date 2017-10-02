@@ -1,0 +1,16 @@
+language model = p(w)
+
+p(A,B,C) = p(A)p(B)p(C) "Naive assumption" independent vairables
+
+p(document) = \pro_i p(w_i) = \pro_w p(w)^{N_w} <-- count tokens where w is the words in the vocabulary
+	N_w is the frequency of a word in a document.
+
+
+max # of words before underflow is around 30
+
+log p(document) = sum N_w (w)
+
+sin is testing on the training data.
+
+figure out why they are getting misclassified
+what are the words in romeo and julie that make it look more like a comedy

@@ -1,0 +1,9 @@
+# gets the authors without having to run the program.
+cut -f 3 metadata.csv | sort | less
+using the "uniq" command, gives you no repetitions.
+
+# correlation of delta score.
+A lower delta means more similarity. The smaller the value is the closer it is
+to the actual value.
+
+"cut -f 3 metadata.tsv | sort | grep -Po "([\w\S ]+)(?<=[^.\n])" | uniq"
