@@ -2,3 +2,20 @@ Delete evertything up to chapter one,
 unless there is a preface by the author.
 If you have titles of multiple short stories
 leave them
+
+Agglomerative clustering example
+Here's an example of agglomerative clustering that I've been using in office hours.
+We'll start with four elements. You can think of these as the leaf nodes of a tree that we will build up by merging pairs of nodes.
+When I merge two nodes, I want to treat the new node as equivalent to one of the original nodes.
+To do that I'm leaving extra room in my data table for twice as many "files" as I have original files (why 2x?).
+We want to make sure that if a node is merged with another node that we don't try to merge it again.
+To keep track of which nodes are "live" I use an array called parents.
+This array has one element per node. It's initialized so that the value at index 0 is 0, index 1 is 1, and so forth.
+Let's say I merge 0 and 1 into a new node, 4. I will now set parents[0] = 4 to indicate that node 0 depends on node 4.
+Node 4 is "live", because its parent is still itself, but nodes 0 and 1 are now merged and not available.
+How do I know which pair of nodes to merge next? 
+I keep a sorted list of pairwise distances. Each element of that list is a tuple that contains the IDs of the two nodes and their distance.
+I make sure that only nodes that are "live" are in this list: when I merge 0 and 1, I remove all the distances that involve either of those two nodes.
+I stop merging when I've got only a certain number of "live" nodes left.
+Now I'd like to show the user what's in those clusters. The code keeps track of the nodes that are merged into each new node.
+So the last loop checks whether a node is still alive and then prints its constituents.
