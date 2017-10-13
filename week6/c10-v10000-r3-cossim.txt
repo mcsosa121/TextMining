@@ -1,0 +1,80 @@
+0
+  Frankenstein / Mary WollstoneCraft Shelley
+  Heart of Darkness / Joseph Conrad
+  Jane Eyre / Charlotte Bronte
+  The Mysterious Affair at Styles / Agatha Christie
+  The Morgesons / Elizabeth Stoddard
+1
+  A Christmas Carol / Charles Dickens
+  A Tale of Two Cities / Charles Dickens
+  Oliver Twist / Charles Dickens
+  Siddhartha / Hermann Hesse 
+  Tess of the d'Urbervilles: A Pure Woman / Thomas Hardy
+  The Scarlet Letter / Nathaniel Hawthorne
+  The Terrible Twins / Edgar Jepson
+2
+  Adventures of Huckleberry Finn / Mark Twain
+  Don Quixote / Miguel de Cervantes Saavedra
+  Dracula / Bram Stoker
+  Little Women / Louisa May Alcott
+  On the Duty of Civil Disobediance / Henry David Thoreau
+  Paradise Lost / John Milton
+  The Romance of Lust: A Classic Victorian erotic novel / Anonymous
+  Sketches, New and Old / Mark Twain
+  The Battle of Life / Charles Dickens
+  The Idiot / Fyodor Dostoyevsky
+  The Odyssey / Homer
+  Wuthering Heights / Emily Brontë
+3
+  Macbeth / Shakespeare
+  Othello / William Shakespeare
+  Sonnets from the Portugese  / Elizabeth Barret Browning
+  The Importance of Being Earnest / Oscar Wilde
+  The Taming of the Shrew / William Shakespeare
+  The Tempest / William Shakespeare
+  The Tragedy of Julius Caesar / William Shakespeare
+  The Tragedy of Romeo and Juliet / William Shakespeare
+4
+  Alice's Adventures in Wonderland / Lewis Carroll
+  Anne of Green Gables / L.M. Montgomery
+  Persuasion / Jane Austen
+  Pride and Predjudice  / Jane Austen
+  Sense and Sensibility / Jane Austen
+5
+  A Study in Scarlet / Arthur Conan Doyle
+  Candide / Voltaire
+  The Adventures of Sherlock Holmes / Arthur Conan Doyle
+  The Count of Monte Cristo / Alexandre Dumas
+  The Divine Comedy / Dante Alighieri
+  The Hound of the Baskervilles / Arthur Conan Doyle
+  The Phantom of the Opera / Gaston Leroux
+  The Picture of Dorian Gray / Oscar Wilde
+  The Return of Sherlock Holmes / Arthur Conan Doyle
+6
+  Around the World in Eighty Days / Jules Verne
+  Les Misérables / Victor Hugo
+  Moby-Dick / Herman Melville
+  Peach Blossom Shangri-la: Tao Hua Yuan Ji / Qian Tao
+  Peeps at Heraldry / Pheobe Allen
+  The Iliad  / Homer
+  The Murders in the Rue Morgue / Edgar Allan Poe
+  Common Sense / Thomas Paine
+7
+  Aesop's Fables / Aesop
+  The Black Lion Inn / Alfred Henry Lewis
+  The Call of the Wild / Jack London
+  The Jungle Book / Rudyard Kipling
+  The Mabinogion / Lady Charlotte Guest
+  The Merry Adventures of Robin Hood / Howard Pyle
+  Ulysses / James Joyce
+8
+  Ivanhoe / Walter Scott
+  The War of the Worlds / H. G. Wells
+  The Wonderful Wizard of Oz / L. Frank Baum
+9
+  Аnna Karenina / Leo Tolstoy
+  Dubliners / James Joyce
+  Ethan Frome / Edith Wharton
+  Metamorphosis / Franz Kafka
+  Peter Pan / J.M. Barrie
+  The Adventures of Tom Sawyer / Mark Twain

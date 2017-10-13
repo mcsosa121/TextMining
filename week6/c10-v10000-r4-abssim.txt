@@ -1,0 +1,80 @@
+0
+  Adventures of Huckleberry Finn / Mark Twain
+  Little Women / Louisa May Alcott
+  Peter Pan / J.M. Barrie
+  The Romance of Lust: A Classic Victorian erotic novel / Anonymous
+  The Adventures of Tom Sawyer / Mark Twain
+  Wuthering Heights / Emily Brontë
+1
+  Macbeth / Shakespeare
+  Othello / William Shakespeare
+  Paradise Lost / John Milton
+  The Taming of the Shrew / William Shakespeare
+  The Tempest / William Shakespeare
+  The Tragedy of Julius Caesar / William Shakespeare
+  The Tragedy of Romeo and Juliet / William Shakespeare
+2
+  Peeps at Heraldry / Pheobe Allen
+  The Murders in the Rue Morgue / Edgar Allan Poe
+3
+  Peach Blossom Shangri-la: Tao Hua Yuan Ji / Qian Tao
+  The Jungle Book / Rudyard Kipling
+  The Mabinogion / Lady Charlotte Guest
+  The Odyssey / Homer
+  The Wonderful Wizard of Oz / L. Frank Baum
+4
+  Ivanhoe / Walter Scott
+  On the Duty of Civil Disobediance / Henry David Thoreau
+  Sonnets from the Portugese  / Elizabeth Barret Browning
+  The Divine Comedy / Dante Alighieri
+  The Merry Adventures of Robin Hood / Howard Pyle
+5
+  Aesop's Fables / Aesop
+  Candide / Voltaire
+  Don Quixote / Miguel de Cervantes Saavedra
+  Frankenstein / Mary WollstoneCraft Shelley
+  Metamorphosis / Franz Kafka
+  Siddhartha / Hermann Hesse 
+  The Count of Monte Cristo / Alexandre Dumas
+  The Iliad  / Homer
+6
+  Alice's Adventures in Wonderland / Lewis Carroll
+  Moby-Dick / Herman Melville
+  Common Sense / Thomas Paine
+7
+  A Christmas Carol / Charles Dickens
+  A Study in Scarlet / Arthur Conan Doyle
+  A Tale of Two Cities / Charles Dickens
+  Around the World in Eighty Days / Jules Verne
+  Dubliners / James Joyce
+  Ethan Frome / Edith Wharton
+  Heart of Darkness / Joseph Conrad
+  Les Misérables / Victor Hugo
+  Oliver Twist / Charles Dickens
+  Sketches, New and Old / Mark Twain
+  Tess of the d'Urbervilles: A Pure Woman / Thomas Hardy
+  The Black Lion Inn / Alfred Henry Lewis
+  The Call of the Wild / Jack London
+  The Phantom of the Opera / Gaston Leroux
+  The Scarlet Letter / Nathaniel Hawthorne
+  The Terrible Twins / Edgar Jepson
+  The War of the Worlds / H. G. Wells
+  Ulysses / James Joyce
+  The Morgesons / Elizabeth Stoddard
+8
+  Аnna Karenina / Leo Tolstoy
+  Anne of Green Gables / L.M. Montgomery
+  Jane Eyre / Charlotte Bronte
+  Persuasion / Jane Austen
+  Pride and Predjudice  / Jane Austen
+  Sense and Sensibility / Jane Austen
+  The Battle of Life / Charles Dickens
+9
+  Dracula / Bram Stoker
+  The Adventures of Sherlock Holmes / Arthur Conan Doyle
+  The Hound of the Baskervilles / Arthur Conan Doyle
+  The Idiot / Fyodor Dostoyevsky
+  The Importance of Being Earnest / Oscar Wilde
+  The Picture of Dorian Gray / Oscar Wilde
+  The Return of Sherlock Holmes / Arthur Conan Doyle
+  The Mysterious Affair at Styles / Agatha Christie

@@ -1,0 +1,80 @@
+0
+  Alice's Adventures in Wonderland / Lewis Carroll
+  Anne of Green Gables / L.M. Montgomery
+  Jane Eyre / Charlotte Bronte
+  On the Duty of Civil Disobediance / Henry David Thoreau
+  The Mysterious Affair at Styles / Agatha Christie
+  The Morgesons / Elizabeth Stoddard
+1
+  Aesop's Fables / Aesop
+  Peach Blossom Shangri-la: Tao Hua Yuan Ji / Qian Tao
+  The Jungle Book / Rudyard Kipling
+2
+  Adventures of Huckleberry Finn / Mark Twain
+  Peter Pan / J.M. Barrie
+  The Adventures of Tom Sawyer / Mark Twain
+  The Wonderful Wizard of Oz / L. Frank Baum
+3
+  Аnna Karenina / Leo Tolstoy
+  Little Women / Louisa May Alcott
+  Metamorphosis / Franz Kafka
+  Persuasion / Jane Austen
+  Pride and Predjudice  / Jane Austen
+  Sense and Sensibility / Jane Austen
+  Tess of the d'Urbervilles: A Pure Woman / Thomas Hardy
+  The Battle of Life / Charles Dickens
+4
+  A Christmas Carol / Charles Dickens
+  A Tale of Two Cities / Charles Dickens
+  Dubliners / James Joyce
+  Ethan Frome / Edith Wharton
+  Oliver Twist / Charles Dickens
+  Siddhartha / Hermann Hesse
+  The Call of the Wild / Jack London
+  The Terrible Twins / Edgar Jepson
+  Ulysses / James Joyce
+5
+  Don Quixote / Miguel de Cervantes Saavedra
+  Dracula / Bram Stoker
+  The Romance of Lust: A Classic Victorian erotic novel / Anonymous
+  The Odyssey / Homer
+  Wuthering Heights / Emily Brontë
+6
+  Macbeth / Shakespeare
+  Othello / William Shakespeare
+  The Importance of Being Earnest / Oscar Wilde
+  The Taming of the Shrew / William Shakespeare
+  The Tempest / William Shakespeare
+  The Tragedy of Julius Caesar / William Shakespeare
+  The Tragedy of Romeo and Juliet / William Shakespeare
+7
+  Around the World in Eighty Days / Jules Verne
+  Ivanhoe / Walter Scott
+  Les Misérables / Victor Hugo
+  Moby-Dick / Herman Melville
+  Peeps at Heraldry / Pheobe Allen
+  The Black Lion Inn / Alfred Henry Lewis
+  The Iliad  / Homer
+  The Murders in the Rue Morgue / Edgar Allan Poe
+  The Scarlet Letter / Nathaniel Hawthorne
+  The War of the Worlds / H. G. Wells
+  Common Sense / Thomas Paine
+8
+  Paradise Lost / John Milton
+  Sonnets from the Portugese  / Elizabeth Barret Browning
+  The Divine Comedy / Dante Alighieri
+  The Mabinogion / Lady Charlotte Guest
+9
+  A Study in Scarlet / Arthur Conan Doyle
+  Candide / Voltaire
+  Frankenstein / Mary WollstoneCraft Shelley
+  Heart of Darkness / Joseph Conrad
+  Sketches, New and Old / Mark Twain
+  The Adventures of Sherlock Holmes / Arthur Conan Doyle
+  The Count of Monte Cristo / Alexandre Dumas
+  The Hound of the Baskervilles / Arthur Conan Doyle
+  The Idiot / Fyodor Dostoyevsky
+  The Merry Adventures of Robin Hood / Howard Pyle
+  The Phantom of the Opera / Gaston Leroux
+  The Picture of Dorian Gray / Oscar Wilde
+  The Return of Sherlock Holmes / Arthur Conan Doyle

@@ -1,0 +1,170 @@
+0
+  Alice's Adventures in Wonderland / Lewis Carroll
+1
+  The Murders in the Rue Morgue / Edgar Allan Poe
+2
+  Ulysses / James Joyce
+3
+  Siddhartha / Hermann Hesse 
+4
+  The Odyssey / Homer
+5
+  The Call of the Wild / Jack London
+6
+  The Tragedy of Romeo and Juliet / William Shakespeare
+7
+  The Picture of Dorian Gray / Oscar Wilde
+8
+  The Importance of Being Earnest / Oscar Wilde
+9
+  The Phantom of the Opera / Gaston Leroux
+10
+  The Taming of the Shrew / William Shakespeare
+11
+  Adventures of Huckleberry Finn / Mark Twain
+12
+  The Adventures of Sherlock Holmes / Arthur Conan Doyle
+13
+  The Tempest / William Shakespeare
+14
+  Othello / William Shakespeare
+15
+  The Idiot / Fyodor Dostoyevsky
+16
+  Anne of Green Gables / L.M. Montgomery
+17
+  Paradise Lost / John Milton
+18
+  Around the World in Eighty Days / Jules Verne
+19
+  The Hound of the Baskervilles / Arthur Conan Doyle
+20
+  The Romance of Lust: A Classic Victorian erotic novel / Anonymous
+21
+  A Tale of Two Cities / Charles Dickens
+22
+  The Tragedy of Julius Caesar / William Shakespeare
+23
+  The Scarlet Letter / Nathaniel Hawthorne
+24
+  Persuasion / Jane Austen
+25
+  A Study in Scarlet / Arthur Conan Doyle
+26
+  The Terrible Twins / Edgar Jepson
+27
+  Peter Pan / J.M. Barrie
+28
+  Don Quixote / Miguel de Cervantes Saavedra
+29
+  Jane Eyre / Charlotte Bronte
+30
+  Sketches, New and Old / Mark Twain
+31
+  Tess of the d'Urbervilles: A Pure Woman / Thomas Hardy
+32
+  The Wonderful Wizard of Oz / L. Frank Baum
+33
+  The Merry Adventures of Robin Hood / Howard Pyle
+34
+  The Morgesons / Elizabeth Stoddard
+35
+  Candide / Voltaire
+36
+  Dubliners / James Joyce
+37
+  Ethan Frome / Edith Wharton
+38
+  Ivanhoe / Walter Scott
+39
+  A Christmas Carol / Charles Dickens
+40
+  Peeps at Heraldry / Pheobe Allen
+41
+  The Adventures of Tom Sawyer / Mark Twain
+42
+  The Iliad  / Homer
+43
+  The Battle of Life / Charles Dickens
+44
+  Little Women / Louisa May Alcott
+45
+  The Mabinogion / Lady Charlotte Guest
+46
+  Peach Blossom Shangri-la: Tao Hua Yuan Ji / Qian Tao
+47
+  Oliver Twist / Charles Dickens
+48
+  Common Sense / Thomas Paine
+49
+  The War of the Worlds / H. G. Wells
+50
+  The Mysterious Affair at Styles / Agatha Christie
+51
+  Sense and Sensibility / Jane Austen
+52
+  The Black Lion Inn / Alfred Henry Lewis
+53
+  The Count of Monte Cristo / Alexandre Dumas
+54
+  Heart of Darkness / Joseph Conrad
+55
+  Macbeth / Shakespeare
+56
+  The Divine Comedy / Dante Alighieri
+57
+  On the Duty of Civil Disobediance / Henry David Thoreau
+58
+  Moby-Dick / Herman Melville
+59
+  Аnna Karenina / Leo Tolstoy
+60
+  Sonnets from the Portugese  / Elizabeth Barret Browning
+61
+  Aesop's Fables / Aesop
+62
+  Les Misérables / Victor Hugo
+63
+  Metamorphosis / Franz Kafka
+64
+  Frankenstein / Mary WollstoneCraft Shelley
+65
+  Pride and Predjudice  / Jane Austen
+66
+  Wuthering Heights / Emily Brontë
+67
+  Dracula / Bram Stoker
+68
+69
+  The Return of Sherlock Holmes / Arthur Conan Doyle
+70
+71
+  The Jungle Book / Rudyard Kipling
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99

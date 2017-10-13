@@ -1,0 +1,80 @@
+0
+  Candide / Voltaire
+  Persuasion / Jane Austen
+  Pride and Predjudice  / Jane Austen
+  Sense and Sensibility / Jane Austen
+  The Romance of Lust: A Classic Victorian erotic novel / Anonymous
+  The Adventures of Sherlock Holmes / Arthur Conan Doyle
+  The Hound of the Baskervilles / Arthur Conan Doyle
+  The Importance of Being Earnest / Oscar Wilde
+  The Murders in the Rue Morgue / Edgar Allan Poe
+  The Return of Sherlock Holmes / Arthur Conan Doyle
+  The Mysterious Affair at Styles / Agatha Christie
+1
+  Frankenstein / Mary WollstoneCraft Shelley
+  Paradise Lost / John Milton
+2
+  Alice's Adventures in Wonderland / Lewis Carroll
+  Peeps at Heraldry / Pheobe Allen
+  The Jungle Book / Rudyard Kipling
+3
+  Aesop's Fables / Aesop
+  Don Quixote / Miguel de Cervantes Saavedra
+  Ivanhoe / Walter Scott
+  Les Misérables / Victor Hugo
+  Moby-Dick / Herman Melville
+  Sketches, New and Old / Mark Twain
+  The Black Lion Inn / Alfred Henry Lewis
+  The Call of the Wild / Jack London
+  The Merry Adventures of Robin Hood / Howard Pyle
+  The Odyssey / Homer
+  The Scarlet Letter / Nathaniel Hawthorne
+  The War of the Worlds / H. G. Wells
+  Ulysses / James Joyce
+4
+  The Divine Comedy / Dante Alighieri
+  The Taming of the Shrew / William Shakespeare
+  The Tempest / William Shakespeare
+  The Tragedy of Julius Caesar / William Shakespeare
+  The Tragedy of Romeo and Juliet / William Shakespeare
+5
+  Peach Blossom Shangri-la: Tao Hua Yuan Ji / Qian Tao
+  Siddhartha / Hermann Hesse 
+  The Mabinogion / Lady Charlotte Guest
+6
+  Adventures of Huckleberry Finn / Mark Twain
+  Macbeth / Shakespeare
+  Othello / William Shakespeare
+7
+  A Christmas Carol / Charles Dickens
+  A Study in Scarlet / Arthur Conan Doyle
+  A Tale of Two Cities / Charles Dickens
+  Аnna Karenina / Leo Tolstoy
+  Anne of Green Gables / L.M. Montgomery
+  Dracula / Bram Stoker
+  Dubliners / James Joyce
+  Ethan Frome / Edith Wharton
+  Jane Eyre / Charlotte Bronte
+  Little Women / Louisa May Alcott
+  Metamorphosis / Franz Kafka
+  Oliver Twist / Charles Dickens
+  Peter Pan / J.M. Barrie
+  Tess of the d'Urbervilles: A Pure Woman / Thomas Hardy
+  The Adventures of Tom Sawyer / Mark Twain
+  The Battle of Life / Charles Dickens
+  The Count of Monte Cristo / Alexandre Dumas
+  The Idiot / Fyodor Dostoyevsky
+  The Phantom of the Opera / Gaston Leroux
+  The Picture of Dorian Gray / Oscar Wilde
+  The Terrible Twins / Edgar Jepson
+  The Wonderful Wizard of Oz / L. Frank Baum
+  Wuthering Heights / Emily Brontë
+  The Morgesons / Elizabeth Stoddard
+8
+  Around the World in Eighty Days / Jules Verne
+  On the Duty of Civil Disobediance / Henry David Thoreau
+  The Iliad  / Homer
+  Common Sense / Thomas Paine
+9
+  Heart of Darkness / Joseph Conrad
+  Sonnets from the Portugese  / Elizabeth Barret Browning

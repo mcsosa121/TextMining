@@ -1,6 +1,6 @@
 """
 
-We want to find interpretable, low-dimensional models of documents. What does 
+We want to find interpretable, low-dimensional models of documents. What does
 a Singular Value Decomposition do, and why might it be useful?
 
 You will need the novels-gutenberg directory in the current directory.
@@ -11,12 +11,27 @@ You will need the novels-gutenberg directory in the current directory.
 
 Now describe the value of the following expressions. Write your answers between lines.
 
+Python is zero indexed so the topmost left element in the array is at index (0,0)
 a. x[1,1]
+Grabs the element at index (1,1) which is 2
+
 b. x[:,1]
+Grabs the column vector at column index 1 which is [[2],[2],[2]]
+
 c. x[1,:]
+Grabs the row vector at row index 1, which is [1,2,3]
+
 d. np.diag(x[1,:])
+Creates a diagnol matrix (A matrix that has zero's everywhere except the diagnol) from the row vector at
+row index 1. The values of the inputted vector are the values of the diagnol of the created matrix.
+For example x[1,:] = [[2],[2],[2]] => np.diag(x[1,:]) =  np.diag([[2],[2],[2]]) = np.array([2,0,0],[0,2,0],[0,0,2])
+
 e. x.T
+Takes the transpose of x. The transpose is the index of each element swtiches (i.e (a,b)->(b,a))
+ex. x.T = (np.array([[1,2,3], [1,2,3], [1,2,3]])).T = np.array([[1,1,1],[2,2,2],[3,3,3]])
+
 f. x[1,:].dot( x[2,:] )
+Takes the dot product of a row vector and a column vector. The dot product is \sum_{i=0}^{k}
 g. x[:,0].dot( x[:,1] )
 h. x.dot( x[:,1] )
 i. x.dot( x )
@@ -65,16 +80,16 @@ metadata_fields = metadata_reader.readline().rstrip().split("\t")
 
 ## Read the rest of the lines of the file
 for line in metadata_reader:
-    
+
     ## Get the next line of the metadata file, and split it into columns
     fields = line.rstrip().split("\t")
-    
+
     ## Convert the list of field values into a map from field names to values
     metadata = dict(zip(metadata_fields, fields))
-    
+
     if not "Author" in metadata:
         metadata["Author"] = "Unknown"
-    
+
     ## Save it for later with the filename as key
     filename = "novels-gutenberg/text/pg{}.txt".format(metadata["ID"])
     novel_metadata[filename] = metadata
@@ -82,18 +97,18 @@ for line in metadata_reader:
     ## Now count the words in the novel
     counter = Counter()
     with open(filename, encoding="utf-8") as file:
-        
+
         ## This block reads a file line by line.
         for line in file:
             line = line.rstrip()
-            
+
             tokens = word_pattern.findall(line)
-            
+
             counter.update(tokens)
-    
+
     ## And save those counts for later
     novel_counts[filename] = counter
-    
+
     ## Record the total number of times each word occurs
     word_counts.update(counter)
 
@@ -113,15 +128,15 @@ titles = [novel_metadata[id]["Title"] for id in filenames]
 file_word_counts = np.zeros([ len(filenames), len(vocabulary) ])
 
 ## Convert a map of file-level counters to a single matrix
-## We'll use two index variables, file_id and word_id. These will be 
+## We'll use two index variables, file_id and word_id. These will be
 ##  *numbers*, not strings, that point to a string in either of
 ##  the two arrays.
 for file_id in range(len(filenames)):
     counter = novel_counts[ filenames[file_id] ]
-    
+
     for word_id in range(len(vocabulary)):
         file_word_counts[file_id,word_id] = counter[ vocabulary[word_id] ]
-    
+
     ## Normalize for length
     file_word_counts[file_id,:] /= np.sum(file_word_counts[file_id,:])
 
@@ -131,6 +146,6 @@ for file_id in range(len(filenames)):
 ## transpose word vectors
 word_vectors = word_vectors.T
 
-## 
+##
 weighted_word_vectors = word_vectors.dot( np.diag(np.sqrt(weights)) )
 weighted_file_vectors = file_vectors.dot( np.diag(np.sqrt(weights)) )
