@@ -3,13 +3,12 @@
 We want to find interpretable, low-dimensional models of documents. What does 
 a Singular Value Decomposition do, and why might it be useful?
 
+
 You will need the novels-gutenberg directory in the current directory.
 
 1. Working with vectors and matrices part II. At the >>> python prompt, create this matrix:
 
-  x = np.array([[ 0.37962213,  1.21124263,  0.56771852],
-       [ 1.36941388,  2.62035395,  2.25421422],
-       [ 0.72534686,  1.55442357,  1.90488544]])
+  x = np.array([[ 0.37962213,  1.21124263,  0.56771852],[ 1.36941388,  2.62035395,  2.25421422],[ 0.72534686,  1.55442357,  1.90488544]])
 
 Now create the SVD:
 
@@ -19,7 +18,13 @@ Now describe the value of the following expressions. What is the code doing?
 Why do you get the results you see? Write your answers between lines.
 
 a. U
+array([[-0.28370447,  0.7019116 ,  0.65332371],
+       [-0.79210722,  0.21244662, -0.57221726],
+       [-0.54044235, -0.67984302,  0.49571719]])
 b. s
+array([ 4.68944102,  0.54874723,  0.18848219])
+b*. V
+
 c. U[:,0]
 d. U[:,0].dot(U[:,0])
 e. U[:,0].dot(U[:,1])
@@ -33,6 +38,8 @@ k. np.outer( U[:,0], V[0,:] ) * s[0] + np.outer( U[:,1], V[1,:] ) * s[1] + np.ou
 
 2. Imagine that half your documents are in English and half are in French. What might be different about the `weights` array?
 
+
+The difference in the weights array is that words in english may be negatively connotated but similar sounding 
 [Response here]
 
 3. Use the `sort_vector()` function to examine the word and document vectors. Find some examples that are surprising, interesting, or confusing.
