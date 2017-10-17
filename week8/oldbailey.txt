@@ -2,7 +2,10 @@ We're going to be using a topic model to explore transcripts from court cases in
 
 1. *Before* looking at documents, take a moment to think about your expectations. What crimes will people be charged with? What sort of evidence will be presented? What will punishments be?
 
-[Response here]
+I think that 1825 was a period of trnasition for London. London would be in the beginning stages of the Industrial ages and I assume that there would be a lot of poverty, as well as filth within the city.
+I feel that many of these people would be charged for simply being homeless, or from stealing. Petty theft was probably very common at this time especially when people were as poor as this. The punishment for
+theft would most likely be jail time and in the worst case execution. There is also murder, and more serious crimes, like desertion or attacks agains thte government. An example would be from Herman Melville's 
+"Billy Budd", Billy accidentally kills his commanding officer and is sentanced to death.
 
 Go to https://mimno.infosci.cornell.edu/bailey/. This is a small portion of the Old Bailey corpus, originally from https://www.oldbaileyonline.org/, formatted and annotated by http://fedora.clarin-d.uni-saarland.de/oldbailey/.
 

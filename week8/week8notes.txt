@@ -1,0 +1,87 @@
+Go to https://mimno.infosci.cornell.edu/bailey/. This is a small portion of the Old Bailey corpus, originally from https://www.oldbaileyonline.org/, formatted and annotated by http://fedora.clarin-d.uni-saarland.de/oldbailey/.
+Open js console
+documents[780]
+"
+…}
+date: ""
+id: 780
+originalOrder: 780
+originalText: "946. was indicted for feloniously assaulting , on the 10th of July , on the King's Highway, at St. Boltolph without Bishopsgate , putting him in fear, and taking from his person, and against his will, one watch-chain, value 4 l. 4 s.; four seals, value 6 l.; one key, value 1 l., and two rings, value 2 l., his property . . I lived at the London Coffee-house, with Sir Watkin Lewes , and now reside there. On the evening of the 10th of July, about half-past nine o'clock, I was walking up Sun-street, Finsbury-square , with a lady; I had a watch in my fob, the chain was visible - it was gold, and worth four guineas; I had four seals, and a gold key worth 20 s., and two gold rings, worth above 40 s. A man came before me, apparently accidentally, I put my came up across myself and the lady, to prevent his coming against us, and he passed us, and just as he got by, the prisoner came up with his hands closed before him, he appeared to come against me accidentally, he unclosed his hands, and got …"
+tokens: Array [ {…}, {…}, {…}, … ]
+topicCounts: Array [ 61, 75, 85, … ]
+__proto__: Object { … }
+"
+
+documents[780].tokens
+"[…]
+[0…99]
+0: Object { word: "was", topic: 13, isStopword: undefined }
+1: Object { word: "indicted", topic: 8, isStopword: undefined }
+2: Object { word: "for", topic: 4, isStopword: undefined }
+3: Object { word: "feloniously", topic: 23, isStopword: undefined }
+4: Object { word: "assaulting", topic: 18, isStopword: undefined }
+5: Object { word: "on", topic: 13, isStopword: 1 }
+6: Object { word: "the", topic: 5, isStopword: undefined }
+7: Object { word: "th", topic: 2, isStopword: 1 }
+8: Object { word: "of", topic: 15, isStopword: 1 }
+9: Object { word: "july", topic: 13, isStopword: undefined }
+10: Object { word: "on", topic: 3, isStopword: 1 }
+[100…199]
+..
+[2000…2026]
+length: 2027
+__proto__: Array []
+"
+
+Go to Vocabulary tab, can remove words by pressing the stop button on a word.
+We went up to the word "That" and then clicked "Run 50 iterations"
+Now in Topic documents things like "[3] hat lead o'clock house from found off lbs seven have" appear. You can filter documents 
+by these. This for example could reperent the discourse of time and how much they would have stolen.
+Or "[24] stealing indicted guilty from aged goods took before handkerchief coat" 
+"
+    [2161/19%] 281. and were indicted for stealing, on the 8th of December , a handkerchief, value 2 s., 
+    the goods of , from his person . . I am a journeyman coach-maker. On the 8th of December, between four and 
+    five o'clock in the afternoon, I was in Cheapside, and saw the prisoners standing about - I watched them into Fleet-street; 
+    they continued together, and near Shoe-lane Easton put his hand into Mr. Boyes's pocket, took a handkerchief out and put it 
+    into the flap of his breeches - Clark was close to him, and must have seen it. I seized Easton with the handkerchief; Clark 
+    came up afterwards, and I took him also. I had a struggle with Clark, and Easton broke from me, but I secured him immediately, 
+    without losing sight of him. Mr. Boyes took the handkerchief from the flap of Easton's breeches. Cross-examined by MR. LAW. Q. 
+    Have you often given\ in\ formation on these subjects? A. Yes; whenever I see a robbery - I had not seen one for twelve months before.
+    I have been a witness here several times. I make boot-jacks and things at home, and live at No. 34, Henry-street, Hampstead-road. .
+    I am a printer. I was passing, and saw a mob - Mr. Boyes had a handkerchief in his hand, and said he had taken it from Easton's 
+    small clothes. I saw Boston take Clark, who put himself in a fighting attitude, Easton ran from Mr. Boyes, but was taken afterwards. 
+    THOMAS BOYES. I command a ship in the East India trade. On coming from the coffee-house, Boston said I was robbed; I felt, 
+    and missed my handkerchief, turned round, and he had hold of Easton, whom I took by the arm, and took my handkerchief from his breeches. 
+    He ran away, and an officer secured him in St. Bride's passage. (Property produced and sworn to.) CLARK'S Defence. I met the other man in 
+    Cheapside, left him in Fleet-street, and soon after, seeing a mob, I went up, and this man collared me. EASTON' Defence. I picked the 
+    handkerchief up. Easton received a good character. 
+    EASTON - GUILTY . Aged 19. Confined Two Months and Whipped . CLARK - GUILTY . Aged 34. Transported for Life .
+"
+
+After 300 Iterations
+[0] asked bought came that sold brought did before there sell
+[1] pair found two property things bundle box goods handkerchiefs stealing
+[2] note notes bank gave name same forged came change that
+[3] hat lead lbs found house this took guilty aged november
+[4] they were out door into there some eight two soldiers
+[5] that writing before from they letter there robinson have believe
+[6] from hand man came you against hold got down before
+[7] door house o'clock found room out there open two night
+[8] they were two prisoners found are which three all some
+[9] you have did that but would when what any this
+[10] shop they took came out were into guilty pair goods
+
+In top 10 we found lead, 
+
+Back in the day clothers and other cloth pieces were very hard to make, so they were a lot more valuable.
+
+Can do JS again
+documents[780].tokens
+[…]
+[0…99]
+0: Object { word: "was", topic: 13, isStopword: true }
+1: Object { word: "indicted", topic: 19, isStopword: undefined }
+2: Object { word: "for", topic: 4, isStopword: true }
+3: Object { word: "feloniously", topic: 6, isStopword: undefined }
+4: Object { word: "assaulting", topic: 6, isStopword: undefined }
+5: Object { word: "on", topic: 13, isStopword: 1 }
