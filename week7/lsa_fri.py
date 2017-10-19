@@ -21,34 +21,101 @@ a. U
 array([[-0.28370447,  0.7019116 ,  0.65332371],
        [-0.79210722,  0.21244662, -0.57221726],
        [-0.54044235, -0.67984302,  0.49571719]])
+The code is computing the left singular vectors of the matrix, where each column can be seen as a 
+decreasing series of approximations.
+
 b. s
 array([ 4.68944102,  0.54874723,  0.18848219])
+This is an array of singular values of x which are the square roots of the eigenvalues of AA'
+
 b*. V
+V are the right singular vectors that are constructed from x. 
+
 
 c. U[:,0]
+Prints a column vector of the best approximation. 
+array([-0.28370447, -0.79210722, -0.54044235])
+
 d. U[:,0].dot(U[:,0])
+Dots the first column vector with itself. The result is 1 implying 
+that the matrix is orthogonal which it is because the columns are
+orthonormal.
+
 e. U[:,0].dot(U[:,1])
+Dots the first column vector with the second column (aka the second
+best approximation). This returns a very small value
+-4.4408920985006262e-16 which is close to zero. This means that 
+these column vectors are almost perpindicular to eachother.
+
 f. V[0,:].dot(V[0,:])
+Is the first row vector (we do this because we want the transpose of V)
+dotted with itself. This results in 1 implying the matrix is orthogonal 
+because the columns of V' are orthonormal.
+
 g. V[0,:].dot(V[1,:])
+Likewise here we receive a number very close to zero, showing that 
+these column vectors of V' (or row vectors of V) are almost perpindicular. 
+-1.1102230246251565e-16 is the result.
+
 # In addition to your description, compare the following expressions to the original matrix x
 h. np.outer( U[:,0], V[0,:] )
+Results in 
+array([[ 0.09585582,  0.19718374,  0.18005126],
+       [ 0.26763093,  0.55054003,  0.50270589],
+       [ 0.18260039,  0.37562484,  0.34298836]])
+
 i. np.outer( U[:,0], V[0,:] ) * s[0]
+Results in 
+array([[ 0.44951023,  0.92468153,  0.84433979],
+       [ 1.25503944,  2.58172498,  2.35740961],
+       [ 0.85629376,  1.76147053,  1.60842366]])
+
 j. np.outer( U[:,0], V[0,:] ) * s[0] + np.outer( U[:,1], V[1,:] ) * s[1]
+Results in 
+array([[ 0.49461965,  1.17042541,  0.55119717],
+       [ 1.26869265,  2.65610395,  2.26868453],
+       [ 0.81260261,  1.52345301,  1.89234967]])
+
 k. np.outer( U[:,0], V[0,:] ) * s[0] + np.outer( U[:,1], V[1,:] ) * s[1] + np.outer( U[:,2], V[2,:] ) * s[2]
+Results in 
+array([[ 0.37962213,  1.21124263,  0.56771852],
+       [ 1.36941388,  2.62035395,  2.25421422],
+       [ 0.72534686,  1.55442357,  1.90488544]])
+Which is the original x. This is essentially showing that by taking combinations of the columns and rows of the left and right 
+singular vectors and using the weights we can approximate the original matrix as well as reconstruct it.   
+
 
 2. Imagine that half your documents are in English and half are in French. What might be different about the `weights` array?
-
-
-The difference in the weights array is that words in english may be negatively connotated but similar sounding 
-[Response here]
+Some weights may approximate the english novels better, while others may approximate the french novels better.
+Words in english may be negatively connotated but similar sounding 
 
 3. Use the `sort_vector()` function to examine the word and document vectors. Find some examples that are surprising, interesting, or confusing.
-
-[Response here]
+(-0.58784424104047894, 'the')
+(-0.36017932948639075, 'and')
+(-0.30653754561790902, 'of')
+(-0.29116758103800722, 'to')
+(-0.23100808469243636, 'a')
+(-0.19142062600828455, 'I')
+(-0.16835086229106269, 'in')
+(-0.13434607749615149, 'that')
+(-0.13041940269807975, 'was')
+(-0.12187193816277338, 'he')
+(-1.629524590526345e-05, 'Plumet')
+(-1.6016220295213072e-05, 'Champs-Élysées')
+(-1.5969340987158217e-05, 'Théodule')
+(-1.5643436069052909e-05, 'Petit-Picpus')
+(-1.5105357932930828e-05, 'grape-shot')
+(-1.499162623284239e-05, 'Toussaint')
+(-1.4665721314737079e-05, 'Babet')
+(-1.4665721314737079e-05, 'Chanvrerie')
+(-1.4339816396631826e-05, 'Boulatruelle')
+(-1.4339816396631826e-05, 'Champmathieu')
 
 4. Do you trust 2D visualizations of documents? Why or why not? What would you want to know before using one?
-
-[Response here]
+I trust 2D visualizations to tell me some of the information about the document, but must also remember that 
+it is an approximation to the true form of the data which lies in n dimensional space. 
+However, before wanting to use one, I would want to make sure that I know linear algebra solidly as well 
+as the algorithms behind the method. That way I would be able to properly interpret the results of the data
 
 """
 

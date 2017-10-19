@@ -85,3 +85,21 @@ documents[780].tokens
 3: Object { word: "feloniously", topic: 6, isStopword: undefined }
 4: Object { word: "assaulting", topic: 6, isStopword: undefined }
 5: Object { word: "on", topic: 13, isStopword: 1 }
+
+10/18/17 Notes:
+
+What is the theme of a novel.
+What does it mean for that novel?
+- REvenge, Adventures, Coming of age, Short Stories, ... etc
+
+Could say that most horror story then facial expresssions might come up a lot
+
+The titles in brackets are human generated although we noticed taht they were weird for some reason
+
+When we tend to talk about fires, we leave a statistical signature that can be found and associated
+with talking about fires. We are almost finding the "footprints" that literary writers have left within
+their works.
+
+Would need a consistent dataset.
+
+Ran topic model on 200 old bailey text files (Has included this in repo)
