@@ -33,7 +33,7 @@ One function is called *entropy*. Entropy takes a distribution and returns a num
 
 5. Describe in your own words what entropy is measuring.
 
-[Response here]
+Entropy is measuring the unceratinty in a distrobution. 
 
 The Gibbs sampling algorithm proceeds in multiple iterations. In each iteration, 
 we look at all the word tokens in all the documents, one after another.
