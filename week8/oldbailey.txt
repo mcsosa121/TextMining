@@ -1,39 +1,142 @@
-We're going to be using a topic model to explore transcripts from court cases in London from 1820-1830. A topic model is similar to a document clustering algorithm, but instead of grouping together documents we're going to group together word tokens.
+We're going to be using a topic model to explore transcripts from court cases in London from 1820-1830. A topic model is similar to a document 
+clustering algorithm, but instead of grouping together documents we're going to group together word tokens.
 
-1. *Before* looking at documents, take a moment to think about your expectations. What crimes will people be charged with? What sort of evidence will be presented? What will punishments be?
+1. *Before* looking at documents, take a moment to think about your expectations. What crimes will people be charged with? 
+What sort of evidence will be presented? What will punishments be?
 
-I think that 1825 was a period of trnasition for London. London would be in the beginning stages of the Industrial ages and I assume that there would be a lot of poverty, as well as filth within the city.
-I feel that many of these people would be charged for simply being homeless, or from stealing. Petty theft was probably very common at this time especially when people were as poor as this. The punishment for
-theft would most likely be jail time and in the worst case execution. There is also murder, and more serious crimes, like desertion or attacks agains thte government. An example would be from Herman Melville's 
-"Billy Budd", Billy accidentally kills his commanding officer and is sentanced to death.
+I think that 1825 was a period of trnasition for London. London would be in the beginning stages of the Industrial ages and I assume that there 
+would be a lot of poverty, as well as filth within the city. I feel that many of these people would be charged for simply being homeless, or from stealing. 
+Petty theft was probably very common at this time especially when people were as poor as this. The punishment for theft would most likely be jail time and
+in the worst case execution. There is also murder, and more serious crimes, like desertion or attacks agains thte government. An example would be from
+Herman Melville's "Billy Budd", Billy accidentally kills his commanding officer and is sentanced to death.
 
-Go to https://mimno.infosci.cornell.edu/bailey/. This is a small portion of the Old Bailey corpus, originally from https://www.oldbaileyonline.org/, formatted and annotated by http://fedora.clarin-d.uni-saarland.de/oldbailey/.
+Go to https://mimno.infosci.cornell.edu/bailey/. This is a small portion of the Old Bailey corpus, originally from https://www.oldbaileyonline.org/, formatted
+and annotated by http://fedora.clarin-d.uni-saarland.de/oldbailey/.
 
-2. Stoplist curation. Sometimes we are interested in small words like "the" or "and". Here we're looking for more meaning-bearing words, so we're going to selectively remove small or overly frequent words from the collection. Go to the "Vocabulary" button and add words to the stoplist. Describe several cases of words where you were not sure whether to keep them or not. Why were you uncertain? How might your analysis change depending on whether you removed those words or not?
+2. Stoplist curation. Sometimes we are interested in small words like "the" or "and". Here we're looking for more meaning-bearing words, so we're going to
+selectively remove small or overly frequent words from the collection. Go to the "Vocabulary" button and add words to the stoplist. Describe several cases of
+words where you were not sure whether to keep them or not. Why were you uncertain? How might your analysis change depending on whether you removed those words
+or not?
 
-[Response here]
+Some words I was hesitant to remove were "value" and "prisoner". Even though they were very common, given the nature of the topic, I believe that they were
+pertinent to the story and were important. My analysis might have changed because I would have less context behing the story. 
 
-3. Train a topic model. Hit the "Run" button at the top left. Each time you hit the button the algorithm will sweep through all the tokens 50 times. Go up to about 300. The left column will show the top 10 most frequent words in each "topic" cluster. Copy the output here. Then run 50 more iterations, and copy the topics again. How do they compare?
+3. Train a topic model. Hit the "Run" button at the top left. Each time you hit the button the algorithm will sweep through all the tokens 50 times. Go up to
+about 300. The left column will show the top 10 most frequent words in each "topic" cluster. Copy the output here. Then run 50 more iterations, and copy the
+topics again. How do they compare?
 
-[Response here]
+After removing words we ran 50 iterations of the algorithm getting the following output.
+[0] before guilty indicted jury december sergeant stealing middlesex iron second
+[1] hat there o'clock they after but from out minutes night
+[2] note notes gave bank no money did is put same
+[3] o'clock there came before an may found were robinson four
+[4] money asked public-house took came found morning gave watch out
+[5] guilty stealing indicted goods aged jury before middlesex property coat
+[6] they were prisoners we two man men up came o'clock
+[7] found cart guilty lead basket aged took indicted stealing up
+[8] is have you by be this been no are believe
+[9] found house door o'clock room two open bed before left
+[10] from watch handkerchief ran up took person down guilty pocket
+[11] house were there by o'clock wife they door no but
+[12] we were two they there some which found our by
+[13] out took up house down came into they there watchman
+[14] you have did would there if no but go up
+[15] you man did up as down came when by from
+[16] there were asked morning they work some did o'clock but
+[17] pawned live pawnbroker two stealing goods indicted produced guilty gave
+[18] you did have know is do or when before man
+[19] shop took goods pair stealing shoes guilty aged yards seven
+[20] which from been two were by before there horse or
+[21] shop came into they out door took an which were
+[22] paid is money this from they as no which received
+[23] she her woman came asked mrs but found did took
+[24] city london by esq sir middlesex gold old jury court
 
-. Compare your topics to others at your table. Find a topic that is similar across all models. Record at least three variants. (If working alone, run the page in multiple tabs.) Click this topic and select the "Topic Documents" button. Describe the documents that have the largest proportion of this topic, and compare those documents to your table-mates. Are they similar or different?
+We then ran another 50 iterations with the results being
+[0] guilty before indicted jury middlesex iron years stealing goods sergeant
+[1] hat o'clock from there were did minutes night eight but
+[2] note notes gave bank is no same name be forged
+[3] o'clock before board there came robinson from were four copper
+[4] money pocket found public-house gave two asked came o'clock watch
+[5] guilty stealing jury indicted before aged goods middlesex coat produced
+[6] they were prisoners we two men three other then both
+[7] found cart lead basket aged guilty this o'clock took lbs
+[8] is have you by be this from been believe no
+[9] found house door o'clock two open property which room before
+[10] watch from up handkerchief ran took person stop thief down
+[11] house there were they door wife o'clock room as up
+[12] we were there found two they some which have by
+[13] took out house they room there came down o'clock were
+[14] you would have if did then go told but asked
+[15] man you did up as down out by came before
+[16] asked morning came were but there if stable by they
+[17] two pawned pawnbroker found live goods stealing property guilty things
+[18] you did have know is there do no or man
+[19] shop pair took goods shoes guilty yards out stealing indicted
+[20] which from two horse were or horses very left by
+[21] shop came an into out asked took door boy they
+[22] money paid received which as they this from paper never
+[23] she her woman mrs wife asked husband took found came
+[24] city london esq middlesex by sir gold jury court old
 
-[Response here]
+These results are fairly similar with many words in the top topic cluster being similar.
 
-. Open the Javascript console (ask for help if you haven't done this before). Read about Mr. Trust's mugging in `documents[780].originalText`. Look at the following array:
+4. Compare your topics to others at your table. Find a topic that is similar across all models. Record at least three variants. 
+(If working alone, run the page in multiple tabs.) Click this topic and select the "Topic Documents" button. Describe the documents that have the largest
+proportion of this topic, and compare those documents to your table-mates. Are they similar or different?
 
+Three topics similar across all our models were the words, "lead", "watch", and "money". This was the top paragraph that appeared. 
+[0] DIV THE WHOLE PROCEEDINGS On the King's Commission of the Peace Oyer and Terminer, AND Gaol Delivery for the City of London, AND ALSO The Gaol Delivery 
+For the County of Middlesex, HELD AT Justice Hall, in the Old Bailey; ON WEDNESDAY, 12th of JANUARY, 1820, and following Days; Being the Second Session in the
+Mayoralty of THE RIGHT HON. , LORD MAYOR OF THE CITY OF LONDON. Taken in Short-Hand by H. BUCKLER, Basinghall Street, (BY AUTHORITY OF THE CORPORATION OF THE 
+CITY OF LONDON.) London: PRINTED AND PUBLISHED, FOR H. BUCKLER, BY T. BOOTH, 31, St. Andrew's Hill, Doctors' Commons. 1820. THE WHOLE PROCEEDINGS On the King's
+Commission of the Peace, OYER AND TERMINER, AND GAOL DELIVERY FOR THE CITY OF LONDON, AND COUNTY OF MIDDLESEX. Before the Right Honourable , Esq. LORD MAYOR 
+of the City of London; Sir , Knt., one of the Justices of his Majesty's Court of King's Bench; Sir , Knt., one of the Justices of his Majesty's Court of Common
+Pleas; Sir , Bart.; Sir , Bart.; Sir , Bart; , Esq.; , Esq., Aldermen of the said City; Sir , Bart., D.C.L. Recorder of the said City; Sir , Knt., Alderman of the
+said City, , Esq. Common Sergeant of the said City, his Majesty's Justices of Oyer and Terminer of the City of London, and Justices of the Gaol Delivery of 
+Newgate, holden for the said City and County of Middlesex. London Jury. . . First Middlesex Jury. . Second Middlesex Jury. . SESSIONS HOUSE, OLD BAILEY, 
+JANUARY 12, 1820. BRIDGES, MAYOR. SECOND SESSION.
+These documents were pretty similar across the table. 
+
+5. Open the Javascript console (ask for help if you haven't done this before). Read about Mr. Trust's mugging in `documents[780].originalText`. Look at the
+following array:
   documents[780].topicCounts
+The array is as follows. documents[780].topicCounts
+(25) [0, 35, 0, 0, 0, 0, 69, 0, 2, 22, 319, 15, 16, 0, 74, 529, 0, 0, 23, 0, 12, 40, 0, 0, 12]
 
-. Which topics are most represented in this transcript? Copy the array here, and also copy the top 10 words (from the left column of the page) for the top 5 most well-represented topics. How does these topics compare to your table-mates?
+6. Which topics are most represented in this transcript? Copy the array here, and also copy the top 10 words (from the left column of the page)
+for the top 5 most well-represented topics. How does these topics compare to your table-mates?
 
-[Response here]
+"[15] man you did up as down out by came before" with a topicCount of 529 is the most represented in this document. 
+The top ten words were
+0: Object { word: "was", topic: 13, isStopword: undefined }
+1: Object { word: "indicted", topic: 8, isStopword: undefined }
+2: Object { word: "for", topic: 4, isStopword: undefined }
+3: Object { word: "feloniously", topic: 23, isStopword: undefined }
+4: Object { word: "assaulting", topic: 18, isStopword: undefined }
+5: Object { word: "on", topic: 13, isStopword: 1 }
+6: Object { word: "the", topic: 5, isStopword: undefined }
+7: Object { word: "th", topic: 2, isStopword: 1 }
+8: Object { word: "of", topic: 15, isStopword: 1 }
+9: Object { word: "july", topic: 13, isStopword: undefined }
+10: Object { word: "on", topic: 3, isStopword: 1 }
+These were also fairly similar across the table. 
 
-. Now that you have explored the documents through the topic model, what do you think of the original questions? What crimes were people  charged with? What sort of evidence was presented? What punishments were applied?
+7. Now that you have explored the documents through the topic model, what do you think of the original questions? What crimes were people  charged with?
+What sort of evidence was presented? What punishments were applied?
 
-[Response here]
+I think the original questions make a lot more sense now, but it was still interesting to see what people were charged with. For example, I did
+not know that handkerchiefs, and other types of cloth were so valuable, and that stealing them was a very serious crime. However, it was easy to 
+see that stealing watches was common because even they are valuable today. 
 
-. Is this a useful way to look at a collection? What type of analysis does it support, and what would be difficult? What do you want to know about the Old Bailey corpus now, and what methods or tools would you use to find out more?
+8. Is this a useful way to look at a collection? What type of analysis does it support, and what would be difficult? What do you want to know about the Old
+Bailey corpus now, and what methods or tools would you use to find out more?
 
-[Response here]
+I believe that this is a valuable way to look a collection. With a large collection you may not have enough time to read all of the documents. 
+Using this analysis you can see an overview of what words come up most frequently within the documents and can form a picture from there. You 
+can also dive deeper into the documents (such as picking a random sample or a few of documents containing the most of common words and read those).
+From now, I would want to know what happened to a lot of these people who were charged. Were the people recommended for mercy actually spared 
+or were they killed? Did the people who were charged for short crimes, end up being charged in the future? In order to find this out, I could
+probably search for similarities within old bailey (i.e the same name appearing across multiple documents). I could also go to an online database
+or the library and see if there are any other sources with similar content from a later time period to compare. 
 

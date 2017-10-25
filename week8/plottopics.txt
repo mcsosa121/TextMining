@@ -1,32 +1,93 @@
 1. Before looking at data, state your expectations. What are the main themes of novels? What happens at the beginning of novels? The middle? The end?
 
-[Response here]
+The main themes of novels are the overarching ideas that the author wants to portray to the reader. Novels can either be linear,
+and have an introduction to the characters and story in the beginning, the height of the action/event in the middle, and the climax of the event/finale 
+at the end. However, many novels are not like this. Novels could be written in reverse, or be made up of a large amount of smaller novels, or jump 
+between diffrent time frames. It's hard to define an overarching description for how all novels progress.
 
 Today we'll be looking at a 500-topic model trained by Matt Jockers on 3600 novels:
 
   https://mimno.infosci.cornell.edu/novels/plot.html
 
-I've divided each novel into 20 segments, and plotted the frequency of each topic in each segment. The dark line shows a mean, the gray region shows an approximation of uncertainty. The words on the right are the most probable words for the topic.
+I've divided each novel into 20 segments, and plotted the frequency of each topic in each segment. The dark line shows a mean, the gray region shows an
+approximation of uncertainty. The words on the right are the most probable words for the topic.
 
-Topics are sorted by their average position within novels: topics that appear mostly at the beginnings of novels are at the top of the page, topics that appear mostly at the end of novels appear at the bottom.
+Topics are sorted by their average position within novels: topics that appear mostly at the beginnings of novels are at the top of the page, topics that
+appear mostly at the end of novels appear at the bottom.
 
 2. How is the vocabulary being curated? Which words have been removed, and which have been kept? How would this choice affect the results?
 
-[Response here]
+The algorithm Matt Jockers uses divides the words into themes based on their coccurence between 1000 word divisions of the entire document. 
+Everything except nouns has been removed. This choice affests the results by factoring out small words which may have been repeated a lot but
+are irrelevant but also excludes verbs (for example "stole") which may be relevant to the topic. 
 
 3. Are these topics good? Find examples that you like, and examples that you don't.
 
-[Response here]
+Some of these topics are good, but others are generally very weird. Some examples that I like are "Money 1", "Money In Pounds And Shillings", 
+"France French People And Language", and "Ideas And Thoughts Of The Mind" because I thought they were funny.
+Some topics that I liked because I thought they were good were "Life and Purpose", "Landlord", and "Sea Voyages". 
+Topics that I didn't like were "Uncertain 1-13", "Bad Data 1-4", "Meetings And Appointments", and "Throat As Object Of Violence".
 
-4. Words can have multiple meanings. One of the goals of this word-level clustering is to separate meaning based on context. Find five examples of words that appear in multiple topics (find in page will be useful). Describe the context of the words in each topic. Are they different?
 
-[Response here]
+4. Words can have multiple meanings. One of the goals of this word-level clustering is to separate meaning based on context. Find five examples of words
+that appear in multiple topics (find in page will be useful). Describe the context of the words in each topic. Are they different?
+    
+    A. Business : Appears in "Money" as a form of making money, "Advice and council" as a meeting between mentor and mentee,"Letters Correspondence" as the 
+          post office, and more. 
+    B. Frenchmen : Appears in "European Countries" as describing the people of France, "Indians" as the men who approached the Indians, "Ships and their Crews"
+          as smugglers, and more.
+    C. Defensive : Appears in "Households" as the manner of the house, "Swords and Weapons" as action, and "Combat With Enemies" as an action.
+    D. Longing : Appears in "Happiness" as a happy thought, "Ambitions and life passion" as a goal, "Girls and trouble" as a worried thought, and more.
+    E. Gravity : Appears in "Opinions And Judgment" as the seriousness of the situation, "Questions and Answers" most likely as the scientific definition,
+          and more.
 
-5. From each region of the page (beginning, middle, end) choose three example topics. Why do you think these themes have the "novel time" distribution that you see?
+Many of these words (for example Gravity) share the same meaning across multiple topics. However, many of them are also diffrent across topics.
 
-[Response here]
+
+5. From each region of the page (beginning, middle, end) choose three example topics. Why do you think these themes have the "novel time" distribution
+that you see?
+
+Beginning:
+  424. [Knaves Rogues And Asses] ass fie worship wit fools matter ears patch sack knave ay rogue jester nose warrant yonder gossip hie humour wits heels 
+  knaves devils aye brains jest rogues hath yea laugh mine plague trick sign mouth flesh visage men ear dog doings wench beard wisdom quoth sirrah stocks 
+  saints lack lingo beast neighbour chorus trumpeter honesty odds folly betters parts glenvarloch peace play care mischief methinks bones nought legs jupiter 
+  shame tush conceit goose turn folk tricks offence stomach errand teeth heads aha sport grin varlet cavaliers trumpet asses hark tavern conscience bargain 
+  worthies leave ado wag speech sinner profane piece purse pillory mayhap ale tune canting fashion groat personage discourse folks quality swine refugee whit
+  discretion imp proverb dalgarno doublet reverence jests balaam hearty tongues puritan shoulders anon hypocrite gravity bobs matters hawk bowels oaths buzzard 
+  coin courtier belly vagabond plymouth truce countryman spouse calling ne reckoning villain mire perchance pains gallows malice trade peradventure lies jaws 
+  luck botheration gallants trow flagon sneaksby rascal horns throats mettle ox worships scurvy cast peep vintner sneer wars cheer buffet pouch zounds falstaff 
+  fig pranks riot custom owl motley quotha reprobate ods vagabonds patron carcase impudent pot carcass wax puritans humph wrath stripes
+Middle:
+  368. [Chambers Rooms Etc] chamber door apartment room gallery apartments passage entrance closet floor lamp steps light length staircase corridor stairs doors
+  couch hour noise table curtain recess walls sound windows tapestry mansion bed attendant passages turret instant footsteps opening midnight saloon extremity
+  building cabinet countenance threshold servants attendants panel alarm night presence intruder sounds moments step terror furniture intrusion ere admittance
+  rooms wing arras curiosity repose silence signal privacy domestics hangings wainscot purpose egress lattice frame summons fears suite casements antechamber
+  access ear admission aperture hinges search ceiling features bolts approach conductor bedchamber violence pannel garments inmate dwelling apprehension anteroom
+  retreat oratory boudoir circumstance toilet vestibule drapery precaution galleries curtains panels attendance armoury corridors partition interior inside foot
+  lights agitation caution reflections survey entry obscurity alcove communicating tothill thither beams footstep tread postern communication folds paces sleeping
+  fastenings solitude meditation terrors reverie implements visitant occupant avenue niche meditations inmates bidding guide ingress refreshment mantle exit locks
+  confinement closing mirror instruments slumber roof examination visage knocking tap apparel concealment dagger conductress female intruders crucifix tiptoe
+  dimensions screen tenant conference token pallet ceremony tapers gloom rampart outlet interruption disorder noises negligence commands robe posture voices
+  haste thickness motions apparition refreshments dormitory alas rustling expectation crevice
+End:
+  318. [Moments Of Confusion In Battle] men moment cries party scene cry confusion shout shouts instant band arms assailants fury death attack bodies enemy
+  enemies ground followers weapons blows foe resistance blow conflict comrades foes side retreat yells charge yell companions terror safety midst rescue swords
+  triumph number quarter assault force arrows tumult uproar rear shrieks struggle signal fugitives dozen destruction volley sounds vengeance rage sides fight
+  pursuit defence efforts slaughter danger escape front panic courage groans speed pursuers din sword fate alarm discharge soldiers heads strife aim victims
+  onset contest advance passage rest voices combatants ranks fire defiance victory prey screams exultation desperation air advantage wounds clamour fray direction
+  peril example slain horsemen pieces wretches stand dismay ere aid voice spear combat lives burst curses fall shock space command earth troop oaths shower
+  victim opponents torches weapon sound entrance pikes missiles spot directions defenders shots stroke parties action shot foot ears carnage knives consternation
+  stones imprecations massacre noise rout savages muskets despair haste clash progress exertions execrations leaders demons succour violence shriek disorder attempt
+  ferocity grasp vigour cowards tide moments havoc insurgents clashing shelter approach barrier torrent outcries roar axes echoes hearts onslaught throats gestures
+  soldiery spectacle commotion refuge antagonists springing effort impetuosity pause group
+
+From these three example topics, it seems that this novel starts out with an funny story (mabye an introduction using a jester or joker, or pranks: ie 
+Huckleberry Finn). It then builds up to some juicy mystery to keep you hooked (Exploring the mystery chamber during the height of action),
+and then ends with a bang in a finale with battle and death. That's why I think, I can find these topics in the locations that they were in.
+
 
 6. What, if anything, do these results tell you about the "average" plot of a novel?
 
-[Response here]
+Overall, I think these results tell us that novels on average, usually follow a plot that begins with an overview or introduction, then builds up the 
+action in the middle, and then finishes (closes up loose ends), or goes through a period of finilizing action at the end.
 
