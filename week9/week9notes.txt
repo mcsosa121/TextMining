@@ -119,3 +119,50 @@ print_all_topics()
 2. How often does it occur in each topic.
 
 Try to unpack what functions were from the entropy that you've gotten.
+
+10/25/17 notes
+What does roman science look like? (What do you think)
+I think it is very based on the gods and around psuedoscience. However, I do believe there
+will be a good amount of actual science infused in there. For example pythagoras was 
+also old as fuck but he knew how to draw triangles and approximate stuff. 
+
+Probably mathematics, zooology, civic engineering, other things
+
+Our topic was coherrence
+  This metric measures whether the words in a topic tend to co-occur together. We add up a score for each distinct pair of top ranked words.
+  The score is the log of the probability that a document containing at least one instance of the higher-ranked word also contains at least one
+  instance of the lower-ranked word.
+    ∑i∑j<ilogD(wj,wi)+βD(wi)
+    ∑i∑j<ilog⁡D(wj,wi)+βD(wi)
+  To avoid log zero errors we add the "beta" topic-word smoothing parameter specified when you calculate diagnostics. Since these scores are log
+  probabilities they are negative. Large negative values indicate words that don't co-occur often; values closer to zero indicate that words tend
+  to co-occur more often. The least coherent topic in the sample file is 
+    "polish poland danish denmark sweden swedish na norway norwegian sk red iceland bj baltic copenhagen cave greenland krak gda faroese". 
+  This topic seems to be about Northern and Eastern European countries, but the short abbreviations "na" and "sk" and the words "red" and "cave"
+  don't really fit.
+
+Model 1
+The below topic is quite low on a Coherence x Token plot 
+14. art invented plants according magic himself medicine discovered arts use son practice mankind man medical properties hellebore treatment physicians discovery
+24. wheat seed grain plants sown barley bread food millet bean garden stalk cabbage sowing rape grains corn spelt garlic meal
+
+
+The token below was pretty high
+30. nature much thus still itself great though every without what already certain now must find make never name various can
+
+
+
+If red has low probability of occuring with one of the more highly ranked words. (I.e the word you see and go whatttt)
+ie. in Model 5
+105. cabbage tiber latium cato circeii exist result umbri both praises surrentum line sprouts cymæ fidenates arretini tusci sabines sung level
+"tiber", "latium",... etc. are red. 
+
+Model 5
+90. wine boiled water decoction bowels employed drink doses stomach affections juice vinegar pains leaves effect root plant cure seed acts
+
+Generally similar across models with some sub genre variation
+
+So its the words that occur together. If more topics, higher coherence within each topic because highly specialized
+
+Rank 1 document means when topics occur they occur a lot.
+Low entropy means only in a few of the focuments while high entropy means in a lot of the documents.
