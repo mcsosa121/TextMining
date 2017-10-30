@@ -1,0 +1,61 @@
+10/30/17
+Spook me up scotty
+Word2Vec and word embeddings
+Entropy (20 questions - I'm thinking of something and have to use yes or no questions to guess whats going on)
+
+Anne
+tree - 0.5, bird 0.25, car 0.25
+
+is it a tree?
+  /     \
+  Yes    No 
+          |
+      is it a bird?
+       /      \
+       Yes    No
+       |       |
+       bird   car 
+The Entropy of a distribuiton is the expect number of questions to guess values sampled from that distribuiton
+-0.5log(0.5) + -0.25log(0.25) + -0.25log(0.25) = 1.5                              where log base 2
+From prob dist -> binary scripts (Huffman encoding)
+What if you're using the wrong script?
+
+now have bertha
+tree - 0.25, bird - 0.25, car - 0.5
+How much worse will we do if using anne's script for bertha's distribuiton
+Can you do better using the wrong encoding (ie. not the optimal)
+Jensens inequality says no (can't do better than the right prob distribuiton)
+
+Kullback–Leibler divergence (https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)
+
+Chad
+tree 0.5  bird 0.5 bird 0.0
+for Chad
+is it a tree?
+ /      \
+ Yes    No 
+  |      |
+  Tree   Bird
+ KL divergence from chad to bertha is 1 and bertha to chad is inf 
+
+ Run "python -i kl.py"
+ think_of(anne_probs,5)
+ average_questions(think_of(anne_probs,200),guess_anne)
+ Gives 1.465 (Analytical expectation of 1.5)
+ average_questions(think_of(anne_probs,200),guess_bertha)
+ 1.775 
+kl(anne_probs, bertha_probs)
+0.25
+Working on the Chad distribuiton
+kl(anne_probs, [0.5,0.5,0.0])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "kl.py", line 42, in kl
+    value += p[i] * math.log2(p[i] / q[i])
+ZeroDivisionError: float division by zero
+
+kl([0.5,0.5,0.0], anne_probs)
+0.5
+
+"python -i context.py"
+Corpus.md is a description of how the file was built. 
