@@ -39,8 +39,6 @@ def average_questions(choices, guesser):
 def kl(p, q):
     value = 0.0
     for i in range(len(p)):
-        if p[i] == 0:
-            continue
-        else:
+        if p[i] != 0:
             value += p[i] * math.log2(p[i] / q[i])
     return value
