@@ -17,19 +17,31 @@ One function is called *entropy*. Entropy takes a distribution and returns a num
 
 1. Run `entropy(np.array([0.7, 0.1, 0.2]))`. What is the value?
 
-[Response here]
+The value is 1.1567796494470395.
 
 2. Run `entropy(np.array([7, 1, 2]))`. Does the value change? Why or why not?
 
-[Response here]
+The value doesn't change. This is because it is based off the distribution of the numbers rather than their values.
 
 3. Try different (non-negative) values of the three numbers. What is the largest value you can get, and what is the smallest?
 
-[Response here]
+The largest value possible is when the probabilities are the same
+i.e 
+entropy(np.array([1/3,1/3,1/3]))
+1.5849625007211561
+We determined in class that the largest possible value is log_2(k) where k is the number of elements in the array. 
+The smallest possible value is 0. This is achieved when the probabilities are as diffrent as possible.
+For example 
+entropy(np.array([99999999/100000000,0.000000001,0]))
+3.1340048109443602e-08
+entropy(np.array([1,0,0]))
+0.0
+ entropy(np.array([0,1,0]))
+0.0
 
 4. Now try different (non-negative) values of *four* numbers. Can you get a larger or smaller entropy than with three?
 
-[Response here]
+You can get a larger entropy that with 3 because log_2(3)<log_2(4). 
 
 5. Describe in your own words what entropy is measuring.
 

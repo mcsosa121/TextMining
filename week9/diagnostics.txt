@@ -6,40 +6,52 @@ The page links to five topic models trained on Pliny the Elder's "Natural Histor
 
 BEFORE LOOKING AT MODELS:
 
-1. What do you expect will be the categories of Roman science?
+++ 1. What do you expect will be the categories of Roman science?
 
-Perhaps based on the diffrent Roman gods/mythology they had at the time.
+Perhaps based on the diffrent Roman gods/mythology they had at the time. However, there will probably also be actual scientific facts included. 
+The Romans/Greeks were able to build complex machinery like the aqueducts so they would be pretty technologically/scientifically advanced. 
 
-The rest of the page describes various diagnostics. Each of the model pages displays topics organized by these diagnostic metrics.
+++ The rest of the page describes various diagnostics. Each of the model pages displays topics organized by these diagnostic metrics.
 
-With your table, pick one of the metrics. Read the description, and discuss your chosen metric to identify and (ideally) clear up any confusion.
+++ With your table, pick one of the metrics. Read the description, and discuss your chosen metric to identify and (ideally) clear up any confusion.
 
-2. List your selected metric, and describe, in your own words, what it measures.
+++ 2. List your selected metric, and describe, in your own words, what it measures.
 
-[Response here]
+Our metric was Coherence. Coherence is a measure of how often certain words ocur together. The lower the measure, the more the group of
+words occur together, the higher, the less chance that they do.
 
-Now look at the individual models. On the left you can see a scatter plot of topics. On the right you can see the most frequent words in each topic. Click either to highlight a topic in both views. Set one of the X or Y axes to your selected metric.
+++ Now look at the individual models. On the left you can see a scatter plot of topics. On the right you can see the most frequent words in each topic. Click either to highlight a topic in both views. Set one of the X or Y axes to your selected metric.
 
-3. Give examples that score either high or low on your chosen metric. What characteristics of these topics result in these values?
+++ 3. Give examples that score either high or low on your chosen metric. What characteristics of these topics result in these values?
 
-[Response here]
+The below topic is quite low on a Coherence x Token plot 
+14. art invented plants according magic himself medicine discovered arts use son practice mankind man medical properties hellebore treatment physicians discovery
+24. wheat seed grain plants sown barley bread food millet bean garden stalk cabbage sowing rape grains corn spelt garlic meal
+This means that these words occur together a lot throughout the document. This is not suprising since in 24, most of the words are plants/food,
+and in 14, the words seem to be similar taking into account the subject of the document.
 
-4. How do the values of your metric and the distribution of values change across the different models? Why do you think this might be?
+The topic below was pretty high
+30. nature much thus still itself great though every without what already certain now must find make never name various can
+Looking at these words none of them really seem to be alike, or seem like they would occur together.
 
-[Response here]
+++ 4. How do the values of your metric and the distribution of values change across the different models? Why do you think this might be?
 
-5. Compare your metric with other metrics. Which other metrics correlate with yours, and which do not?
+The values measured by Coherence are generally similar across the diffrent models while being diffrent across certain subgenres. This might be becuase
+of the assumptions and choices that each model makes.  
 
-[Response here]
+++ 5. Compare your metric with other metrics. Which other metrics correlate with yours, and which do not?
 
-6. Does your selected metric do a good job of identifying problematic topics?
+Rank 1 Documents, Allocation ratio, and Allocation count are the most similar to Coherence, while the other metrics don't seem to be correlated much.
 
-[Response here]
+++ 6. Does your selected metric do a good job of identifying problematic topics?
 
-7. Imagine you are doing a study like the Martha Ballard diary or the Richmond Dispatch. How concerned should you be about the quality of individual topics? Would these diagnostic metrics help you build an argument? Or would they damage the credibility of the method?
+I thought Coherence did a pretty good job at identifying problematic topics because it groups together things that don't really go well together.
 
-[Response here]
+++ 7. Imagine you are doing a study like the Martha Ballard diary or the Richmond Dispatch. How concerned should you be about the quality of individual topics? Would these diagnostic metrics help you build an argument? Or would they damage the credibility of the method?
 
-8. Based on your reading of these models, what are the categories of Roman science?
+I wouldn't be too concerned about the quality of individual topics. After all, the topics are only a means for us to analyze the document. If the quality is really bad, then 
+the metrics might hurt an argument, and in that case we would have to improve our algorithm/possibly switch to a diffrent metric. 
 
-[Response here]
+++ 8. Based on your reading of these models, what are the categories of Roman science?
+
+Medicine, Farming, Animals, Plants, Metals, and Space
