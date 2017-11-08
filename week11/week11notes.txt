@@ -1,0 +1,41 @@
+Wedndesday 11/8 Notes
+
+We ran "guess_equal(eight_cups)" with the whole class and recorded how many people
+got how much correct.
+How Many Correctly Guessed | Number of People
+0: 2
+1: 0
+2: 10
+3: 0
+4: 29
+5: 0
+6: 13
+7: 0
+8: 2
+
+Fischer proved that you can show that there are 70 possible permutiations. 
+
+Ran guess Randomnly. These were the results.
+0: 0
+1: 1
+2: 5
+3: 15
+4: 15
+5: 10
+6: 7
+7: 3
+8: 1
+
+New experiment: 6 cups
+[1,0,0,0,1,1]
+0: 3
+1: 0
+2: 31
+3: 0
+4: 22
+5: 0 
+6: 1
+
+23 people got one 6 in ten trials.
+
+** Want us to design our own experiment. How would you test a supposed "beverage superpower"
