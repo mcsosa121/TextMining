@@ -140,7 +140,26 @@ Here the closest word is in 2/3 cases, not one of the inputted words. This shows
 6. The file `original.vec` is trained in the same way on the same files, but without modifications to the text.
    Load these vectors instead of `horror.vec`. Run the same queries. What do you think is different about how I pre-processed the training data?
 
-[Response here]
+>>> v1 = get_vector("whaler")
+>>> nearest(v1,20)
+[(1.0, 'whaler'), (0.92443566479763317, 'Jane.'), (0.92419430990158813, 'Ellen'), (0.92327861483432772, 'Square.'), (0.92296536776153471, '"Yes."'), 
+ (0.92189248601438067, 'Dutee'), (0.92137649953895751, 'Arts.'), (0.92023768155051433, 'Californian'), (0.91957389507680465, 'open."'), (0.91581527991449674, '1845.'), 
+ (0.91460277983318083, 'quiet."'), (0.91443629135049009, 'tennis'), (0.91438411186562163, 'gbnewby@pglaf.org'), (0.91403740407287604, 'Introduction'), (0.91388968401852111, 'empty."'), 
+ (0.91149684920163876, 'say:--'), (0.91133739640225042, 'Metzengerstein'), (0.9108226638536665, '9.'), (0.90884306730157527, 'Science'), (0.90849904293220063, '1849.')]
+>>> v2 = get_vector("Jane")
+>>> nearest(v1+v2,20)
+[(0.91525226368973767, 'whaler'), (0.91525226368973733, 'Jane'), (0.91346634708449082, 'Ellena'), (0.91111986118723087, '1829,'), (0.90974114118527794, 'Edmund'), 
+ (0.90528760100863437, 'Forest_'), (0.90422997693966756, 'Italian_,'), (0.90187079499475786, 'di'), (0.90106406019527485, 'Hamilton'), (0.90040383503568111, '_History'), 
+ (0.90036804972859985, 'Bristol'), (0.90033926010263021, 'Edinburgh,'), (0.8952626242116597, '1820'), (0.89510526551588943, 'Year'), (0.89414072259067945, 'Californian'), 
+ (0.89375565689858094, '1845.'), (0.8931321837958035, 'Sicilian'), (0.89223092739431242, 'Roche,'), (0.89206496513723343, 'Convent'), (0.89037285562819413, 'Spazac,')]
+>>> nearest(v1-v2,20)
+[(0.63716510977486185, 'blood-curdling'), (0.63094941497121537, 'stared,'), (0.61693658472444679, 'laughter.'), (0.60814908085432373, 'quiver'), (0.60647374463919612, 'muttering'), 
+ (0.60451067674134529, 'sound;'), (0.59828666187361823, 'soft,'), (0.59266199567013966, 'flame;'), (0.59177771953226377, 'scream,'), (0.58992024389350894, 'snapping'), 
+ (0.5890295948311477, 'roared'), (0.58871436378220054, 'fury;'), (0.58765698242394793, 'blast'), (0.58522783045018523, 'fluttering'), (0.58482101111619555, 'mocking'),
+ (0.58436519292310218, 'dreadful,'), (0.58396947737547455, 'roar,'), (0.582433504865709, 'ghastly,'), (0.5821840120126035, 'breathing.'), (0.58214644008830885, 'twig')]
+
+From looking at these results it seems like in pre-processing the data you took out a lot of things that weren't nouns. For example, names, and years, were removed.
+
 
 7. The file `ecco_vectors.vec` has embeddings trained by Ryan Heuser on billions of words from 18th century books. 
    Load this file, and try at least five queries. This can include single words or combinations of words. How are these different 
