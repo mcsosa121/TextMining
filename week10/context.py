@@ -6,7 +6,43 @@ We'll use a collection of ghost stories from Gutenberg as an example.
 
 1. Look at the context of words with the `contexts` function. Find three interesting examples with context size 5. (Copy enough output to get a sense of what's there, don't copy everything if it's long.)
 
-[Response here]
+- The first interesting example I found was 
+    "Spook"
+    >>> contexts("spook",5)
+    happening at all Poor old [spook] I suppose it would keep
+    it There's nothing of the [spook] about Leon He's of this
+    of various types The old-fashioned [spook] gradually declines in popularity He
+    of the phantom ship the [spook] of the high seas But
+    ------------------------------------------------------------------------------
+    Interestingly enough, "Spooky" didn't return anything! Spooky!
+- The next interesting example, getting in the halloween spirit was
+    "Ghost"
+    An excert of the output can be seen below
+    >>> contexts("ghost",5)
+    ...
+    a cloud of smoke Gawaine's [ghost] with those of the knights
+    romance of _Sir Amadas_ the [ghost] of a merchant whose corpse
+    in 1716-17 by a persevering [ghost] called Old Jeffrey whose exploits
+    believe it The Cock Lane [ghost] gained very general credit and
+    The appearance of Lord Lyttleton's [ghost] in 1779 was described by
+    believe in the Cock Lane [ghost] as the most extraordinary thing
+    if it was really a [ghost] it could do one no
+    story in _Isabella_ of Lorenzo's [ghost] who Moaned a ghostly undersong
+    ...abs
+- The last interesting example I found was 
+    "Petticoat"
+    >>> contexts("petticoat",5)
+    a glimpse of her old [petticoat] the thought passed as quickly
+    are tagging after some new [petticoat] again And he continued wrathfully
+    upper stone lay a white [petticoat] on the second a silk
+    stone was discovered a white [petticoat] on the second a silk
+    upper stone lay a white [petticoat] on the second a silk
+    been scarcely possible that the [petticoat] and scarf should have retained
+    bushes were broken but the [petticoat] and the scarf are found
+    a new slip from the [petticoat] He tore it made it
+    when scarcely out of the [petticoat] stage displayed the regular Whittingen
+    of every man when a [petticoat] is more attractive to him
+    with tarnished lace a satin [petticoat] satin shoes and no stockings
 
 2. Try smaller and larger context windows. What can you get from the larger windows that you can't from the smaller windows? What can you still see from small windows (1 or 2 words)? [hint: try different parts of speech]
 
