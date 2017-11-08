@@ -83,13 +83,59 @@ It seems like their context words were a bit similar but not too much.
 just use `+`! Search for three pairs of words, and copy the 20 nearest neighbors here. 
 What do you notice about the single closest vector? How is this different from the previous question?
 
-[Response here]
+>>> v1 = get_vector("dispersion")
+>>> v2 = get_vector("rhythmic")
+>>> v3 = get_vector("calculus")
+>>> v11 = get_vector("steadiness")
+>>> v22 = get_vector("repellent")
+>>> v33 = get_vector("repairer")
+
+>>> nearest(v1+v11, 20)
+[(0.98607891518231849, 'dispersion'), (0.98607891518231827, 'steadiness'), (0.95209554381113026, 'inconveniences'), (0.94477513945281932, 'trespassers'), 
+ (0.94120615471444136, 'sequestered'), (0.94114937903905582, 'ineffective'), (0.93980199585869961, '_jane'), (0.93965548095856133, 'shifts'), 
+ (0.93926265332512227, 'automata'), (0.9371021541843525, 'two-thirds'), (0.93683668399846121, 'disorderly'), (0.93638106027648438, 'maltese'), (0.9355696030597479, 'booty'), 
+ (0.93521048045782629, 'renting'), (0.93474258614473382, 'paraphernalia'), (0.93473779947972058, 'personalities'), (0.93420943948421076, 'pretentious'), (0.93394382879986504, 'rustics'),
+ (0.93223605336363868, 'approbation'), (0.93168101085982091, 'bestowing')]
+
+>>> nearest(v2+v22, 20)
+[(0.98633723908224002, 'rhythmic'), (0.98633723908224002, 'repellent'), (0.95922873725065361, 'candlelight'), (0.95814919049626734, 'mistook'), 
+ (0.95623207378032937, 'embraces'), (0.95398769837685604, 'metaphor'), (0.95008623065075748, 'medicinal'), (0.95004733260326002, 'roughness'), (0.94966754929766584, 'lingers'),
+ (0.94833360591694049, 'undecipherable'), (0.9478137519644223, 'merging'), (0.94577422438496195, 'gloss'), (0.94436086373034556, 'strands'), (0.94425093715156372, 'turgid'), 
+ (0.94399475556653833, 'manageable'), (0.94389725366955635, 'transparency'), (0.94376530654020718, 'banishing'), (0.94353854999053177, 'disagreeably'), (0.94290478434896574, 'symmetry'), 
+ (0.94124356477165139, 'child-like')]
+
+>>> nearest(v3+v33, 20)
+[(0.97843649322524073, 'repairer'), (0.97843649322524073, 'calculus'), (0.94286672417739525, 'reputations'), (0.91544436385717942, 'berlin'), (0.91327555343087052, "anything'"),
+ (0.91032048681341693, 'plagues'), (0.90988343350161949, 'necessities'), (0.90959311462454984, 'inter'), (0.90852475192773796, 'newton'), (0.90598118391568905, 'disciple'), 
+ (0.90570391348114865, '179'), (0.90565547159064375, 'validity'), (0.90498246950448258, 'prophets'), (0.9046492257089005, 'incensed'), (0.90453653082941909, 'algebraical'), 
+ (0.90414686875560712, 'bono'), (0.90333328589978423, 'locke'), (0.90321458259473375, 'indolent'), (0.90280603340730892, 'epigram'), (0.90239666832878274, '(strange')]
+
+Here the single closest verctor is one of teh two words. This is diffrent than the previous problem in that in the previous example, the most similar vector 
+was the word being inputted with a cosine similarity of 1, but here, no word is exactly the same 
+
 
 5. What about subtraction? Use the same examples as in the previous problem, 
 but this time search for the *difference* between vectors (use `-`). 
 Comment on what changes and what stays the same.
 
-[Response here]
+>>> nearest(v1+v11, 20)
+[(0.98607891518231849, 'dispersion'), (0.98607891518231827, 'steadiness'), (0.95209554381113026, 'inconveniences'), (0.94477513945281932, 'trespassers'), 
+ (0.94120615471444136, 'sequestered'), (0.94114937903905582, 'ineffective'), (0.93980199585869961, '_jane'), (0.93965548095856133, 'shifts'), (0.93926265332512227, 'automata'), 
+ (0.9371021541843525, 'two-thirds'), (0.93683668399846121, 'disorderly'), (0.93638106027648438, 'maltese'), (0.9355696030597479, 'booty'), (0.93521048045782629, 'renting'), 
+ (0.93474258614473382, 'paraphernalia'), (0.93473779947972058, 'personalities'), (0.93420943948421076, 'pretentious'), (0.93394382879986504, 'rustics'),
+ (0.93223605336363868, 'approbation'), (0.93168101085982091, 'bestowing')]
+>>> nearest(v2-v22, 20)
+[(0.36523887313186021, 'gentle'), (0.2887523250808447, 'lower'), (0.27761981175209077, 'constant'), (0.24033043104632457, 'high'), (0.22691161094833923, 'valleys'), 
+ (0.22569432047943083, 'earth-current'), (0.22259040678929715, 'ears'), (0.22233415287260422, 'alway'), (0.21950528145704964, 'seas'), (0.21940837352240242, 'steady'), 
+ (0.21692397948624051, 'millions'), (0.2145133018498169, 'forces'), (0.21425651810642329, 'music'), (0.21030658571618779, 'roar'), (0.21022036299572924, 'regular'), 
+ (0.2084514131778693, 'south-west'), (0.20776329152482262, 'hearts'), (0.20611505294818902, 'volcanoes'), (0.20519826920825276, 'higher'), (0.20165896119872664, 'sway')]
+>>> nearest(v3-v33, 20)
+[(0.48247076845169395, 'vapor'), (0.44859851773914872, 'surfaces'), (0.43699120254941859, 'dense'), (0.43492835747660741, 'funnel'), (0.43295040791122685, 'finely'), 
+ (0.43200596686560938, 'hues'), (0.43031867326025686, 'resembling'), (0.42944567008517059, 'rim'), (0.41650125098692975, 'thickly'), (0.41602337925518929, 'grotesquely'), 
+ (0.41335588962344988, 'surface'), (0.40631706972141124, 'vellum'), (0.40627059764857643, 'portions'), (0.40585150216634702, 'machinery'), (0.40495213011372228, 'species'),
+ (0.4047654670046551, 'spots'), (0.40438733726491083, 'diameter'), (0.40333776419301909, 'dusky'), (0.40294993132451229, 'tapestry'), (0.40213682399400646, 'patterns')]
+
+Here the closest word is in 2/3 cases, not one of the inputted words. This shows that the difference brings out different words when looking at words that are similar.
 
 6. The file `original.vec` is trained in the same way on the same files, but without modifications to the text.
    Load these vectors instead of `horror.vec`. Run the same queries. What do you think is different about how I pre-processed the training data?
