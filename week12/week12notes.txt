@@ -1,0 +1,31 @@
+Monday Notes:
+
+A1: 50/1000
+A2: 3/500
+
+100/100 vs. 0/100
+
+                "Correct"  "Incorrect"
+
+                Austen      Dickens  
+                _______________________
+               |           |           |
+Apple          |           |           |
+               |           |           | # counts for word type
+               |-----------|-----------|
+Not Apple      |           |           |
+               |           |           |
+               |___________|___________|
+
+                lengths per author
+
+Label: {"Austen", "Dickens"}
+Event: {"Word", "Not Word"}
+
+counter c = {"a":1, "b":2, "c":4}
+# word types = len(c)
+# word tokens = sum (c.values())
+
+
+dunning g score of 0 ==> same proportions
+dunning g score close to 0 (very small values) ==> proportions are close to eachother but not exact.

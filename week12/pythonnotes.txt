@@ -1,0 +1,18 @@
+Most distinctive words used by Jane Austen and Charles Dickens:
+
+Least distinctive terms used by Jane Austen and Charles Dickens:
+>>> m = confusion_matrix(100,1000,0,1000)
+array([[  100.,     0.],
+       [  900.,  1000.]])
+>>> dunning_g(m)
+-143.89502660059384
+>>> m = confusion_matrix(1000,1000,0,1000)
+array([[ 1000.,     0.],
+       [    0.,  1000.]])
+>>> dunning_g(m)
+-2772.588722239781
+>>> m = confusion_matrix(100,1000,10,100)
+array([[ 100.,   10.],
+       [ 900.,   90.]])
+>>> dunning_g(m)
+0.0
