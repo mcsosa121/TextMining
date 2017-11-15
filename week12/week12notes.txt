@@ -29,3 +29,26 @@ counter c = {"a":1, "b":2, "c":4}
 
 dunning g score of 0 ==> same proportions
 dunning g score close to 0 (very small values) ==> proportions are close to eachother but not exact.
+
+Wednesday Notes (Make sure to have Nltk and Gensim installed)
+
+- Measuring Oracle Authenticity in ancient Greece
+
+m = word_embedding(novel_sentences.keys())
+<gensim.models.word2vec.Word2Vec object at 0x7f2c1efe3710>
+
+nearest(m,'moon',10)
+[('sun', 0.9293254017829895), ('sky', 0.9116991758346558), ('snow', 0.8990770578384399), 
+ ('moonlight', 0.8813838958740234), ('sunshine', 0.8639636039733887), ('star', 0.8470292687416077), ('horizon', 0.8409056663513184), 
+ ('clouds', 0.8336660861968994), ('sunlight', 0.829380452632904), ('gloom', 0.8292123079299927)]
+
+>>> a=bootstrap_sample([1,2,3,4,5],10)
+array([3, 5, 5, 5, 5, 5, 2, 3, 5, 2])
+
+>>> np.mean(a)
+4
+
+If you average all these can get to an approximation of true result. 
+bootstrap does not relly on the underlying distribution. So if you can run experiment a bunch of times
+can simulate the experiment with different data sets. And by doing that can kind of say, ok I think 
+this is actually a vaild result, not just getting lucky. 

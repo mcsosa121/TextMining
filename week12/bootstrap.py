@@ -27,6 +27,8 @@ stable a word's neighbors are given this collection.
 0. Ensure that python packages gensim and nltk are installed. For Anaconda, use
    the following command: "conda install [package name]"
 
+    After much trouble this was accomplished. (Mabye I should've just used conda)
+
 1. Construct bootstrap samples of size 5 for the following groups using the
    bootstrap_sample method:
    (a) [1, 2, 3, 4, 5]
@@ -125,8 +127,9 @@ bootstraps_b = None
 2. Add code here. Use the print statements below to print out the resulting
    means.
 """
-#print('(a): true: {}, sample: {}, bootstrap: {}'.format(?, ?, ?))
-#print('(b): true: {}, sample: {}, bootstrap: {}'.format(?, ?, ?))
+#print('(a): original: {}, bootstrap: {}'.format(?, ?, ?))
+#print('(b): true: {}, original: {}, bootstrap: {}'.format(?, ?, ?))
+
 
 # This method trains a word embedding using the tokenized sentences associated
 # with filenames_list. Note that including duplicate filenames means that 
@@ -138,9 +141,11 @@ def word_embedding(filenames_list):
         sentences.extend(novel_sentences[filename])
     return Word2Vec(sentences)
 
+
 # Get the n closest neighbors of a word within a word embedding.
 def nearest(embedding, word, n):
     return embedding.similar_by_word(word, n)
+
 
 # Train a word embedding using a size n bootstrap sample of filenames_list.
 def bootstrap_embedding(filenames_list, n):
