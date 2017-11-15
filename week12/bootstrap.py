@@ -127,9 +127,8 @@ bootstraps_b = None
 2. Add code here. Use the print statements below to print out the resulting
    means.
 """
-#print('(a): original: {}, bootstrap: {}'.format(?, ?, ?))
-#print('(b): true: {}, original: {}, bootstrap: {}'.format(?, ?, ?))
-
+#print('(a): original: {}, bootstrap: {}'.format(?, ?))
+#print('(b): original: {}, bootstrap: {}'.format(?, ?))
 
 # This method trains a word embedding using the tokenized sentences associated
 # with filenames_list. Note that including duplicate filenames means that 
