@@ -9,26 +9,74 @@ For each method, answer the following questions:
 * What format of text data does this method require?
 * Besides text, what do we need to specify for this method to work? Consider any non-text data, user-specified parameters, etc.
 * What variables, if any, can be automatically inferred by an algorithm?
-* Many of these methods work by assigning numbers to the word types in a vocabulary, or to the documents. What are the dimensions of these outputs, and what are the constraints on the numbers in the outputs?
+* Many of these methods work by assigning numbers to the word types in a vocabulary, or to the documents. What are the dimensions of these outputs, 
+and what are the constraints on the numbers in the outputs?
 * What are three examples of questions that can be answered by this method? Be as specific as possible. You may assume the existence of any dataset that is appropriate.
 * How can this method fail? What would we notice if this were to happen?
 
 1. Sentiment lexicons
-
+    - Format: A group of texts
+    - Specify: A lexicon associating words/other to scores.
+    - Variables: None
+    - Output: A score for each document assoicated with a sentiment.
+    - 3 Question Ex: A. Is this text happy or sad based on the lexicon?
+                     B. How happy or sad is this text?
+                     C. Which texts in the group have a positive happiness score based on the lexicon, versus a negative one?
+    - How can this method Fail: No lexicon or lexicon wrongly associates word to their scores.
+    - What would we notice: An example would be if we see a text that is generally considered to be happy, being classified as sad.
 
 2. Classifiers, such as Naïve Bayes
-
+    - Format: A group of texts about anything and classifiers associated with them (ex. genres)
+    - Specify: Need to have each text associated with a classifier if not associated already. (I.e Anthony and Cleopatra to Tragedy)
+    - Variables that can be inferred: Probability of a word occuring.
+    - Output: A negative number for each classifier. For example if the classifiers are genres, then you'd get a number for Tragedy, comedy, hisory, etc. 
+    - 3 Question Ex: A. What is the log probability of this text being a Tragedy?
+                     B. Is this email spam or not?
+                     C. Will this movie be succsessful based off its script?
+    - How can this method Fail: When data is not linearly seperable.
+    - What would we notice: The algorithm fails to classify certain outcomes.
 
 3. Clustering (agglomerative or k-means)
-
+    - Format: A list of texts and metadata about them. 
+    - Specify: A similarity function (Like cosine similarity or absolute distance.), and for algorithms like k-means the number of clusters. 
+    - Variables that can be inferred: The clusters
+    - Output: Returns a list of X clusters and the members within them where X was predefined in algorithms like K-means.
+    - 3 Question Ex: A. What is the location of someone using a phone on a wifi network? (This is a recent paper, pretty cool)
+                     B. What images are similar to eachother?
+                     C. Success of different applicants in a competition. 
+    - How can this method Fail: When the data is not continuous. 
+    - What would we notice: When the algorithm fails to converge or divide data into K distinct clusters.
 
 4. Latent Semantic Analysis (LSA)
-
+    - Format: A list of texts and their metadata. 
+    - Specify: Word and File Vectors corresponding to the documents
+    - Variables: The closeness of documents
+    - Output: A matrix that relates certain documents to eachother.
+    - 3 Question Ex: A. Which documents are similar to this one, but aren't exactly the same?
+                     B. Which documents should be returned when searching for the word "Apple"?
+                     C. In a multidimensional space, which documents are similar to one another?
+    - How can this method Fail: If new documents are just added in and you try to use them.
+    - What would we notice: The output wouldn't work correctly. You'd need to recompute the matrices.
 
 5. Topic models
-
+    - Format: A list of documents
+    - Specify: Certain words to be removed.
+    - Variables: The types of words that appear together
+    - Output: A list of most frequently seen together words. 
+    - 3 Question Ex: A: What kind of crimes were frequent in victorian london?
+                     B: What are the general topics of our documents?
+                     C: What is the general summary of what is going on in these documents? (Given that you don't have time to read them all
+    - How can this method Fail: Certain words can be useless and throw off the algorithm.
+    - What would we notice: When these words appear in the output.
 
 6. Word embeddings
-
+    - Format: A list of documents and their vectors.
+    - Specify: Vectors corresponding to the words in the documents. Might have to use a representation like word2vec.
+    - Variables: Space of the words.
+    - Output: What words are similar to eachother.
+    - 3 Question Ex: A: What words are close to this certain one?
+                     B: What topics are low on the coherence scale? 
+    - How can this method Fail: Wrong interpretations.
+    - What would we notice: In our analysis.
 
 

@@ -136,7 +136,15 @@ So here we can see we get >= 8 guesses correctly 1020 out of 10000 trials.
 
 5. If someone tells you they can tell the difference between Gimme's Espresso Blend and Holiday Blend, what experiment would you design to test their ability? How many cups would you ask them to taste, and what would you tell them about the experiment? How many cups would you need them to taste for you to be satisfied that they really can tell the difference even if they make a mistake?
 
-[Response here]
+I'm no Coffee connosieur but but I'm pretty sure these blends might be difference colors. So first I would have them in a non-see-through
+cup with a lid (almost like a sippy cup) so that they couldn't see what they were drinking. Then I would give them 8 of these non-see-through cups.
+I would give one cup of either Expresso or Holiday Blend chosen randomnly. I would take note of their answer. I would then give them one of the opposite blend,
+followed by one of the opposite blend again, and then the original blend. If they were correct for all four, I would tell them that they were incorrect and tell them 
+they have one more chance.
+I would then repeat this in the same order, so they have gone through all 8 cups. 
+By now they know both tastes. This experiment will allow us to see if they were just randomnly guessing, or if they actually did know their Coffee.
+If they did know, then they would get all 8 cups correct, since they would trust their gut and still guess the correct blend. Otherwise they would likely change their answers. 
+Overall this test might not actually work, but it would probably satisfy me, since some people are caffeine addicted and probably do know their coffee. 
 
 
 """
