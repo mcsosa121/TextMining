@@ -1,0 +1,115 @@
+Monday (Only day of the week before break)
+
+
+Example : You have two basketball players and are recording free throws made.
+One makes 5 out of 100 shots, and the other makes 10 out of 100.
+
+>>> dunning_score(5,10,100,100)
+1.8341419597039819
+
+Does the one who makes 10 shots have a better ability?
+
+What kind of dunning_score would convince you ?
+Class said ~ 1.3
+
+Here are some scores  
+>>> print_nicely(word_scores[0:10])
+975.544 3842    891     he
+830.17  1782    2780    their
+675.685 446     1146    Athenians
+639.223 641     1       thou
+613.622 227     796     you
+594.931 625     4       Persians
+519.779 67      464     allies
+499.757 2656    744     is
+469.337 1079    147     then
+454.524 1534    314     when
+
+But Athenians has a dunning_score of 675.685
+meaning its extremely unlikely that both of them use the word in 
+the same proportion.
+
+>>> print_nicely(word_scores[0:30])
+975.544 3842    891     he
+830.17  1782    2780    their
+675.685 446     1146    Athenians
+639.223 641     1       thou
+613.622 227     796     you
+594.931 625     4       Persians
+519.779 67      464     allies
+499.757 2656    744     is
+469.337 1079    147     then
+454.524 1534    314     when
+441.163 1529    320     I
+428.273 144     534     our
+380.554 1306    271     these
+367.636 636     54      king
+363.908 2853    963     this
+357.89  8       228     Syracusans
+354.387 3       208     heavy
+346.41  776     102     said
+340.395 2       196     infantry
+331.248 158     481     war
+314.37  16      226     Meanwhile
+312.682 350     5       Then
+312.525 60      316     Athenian
+309.525 95      372     your
+299.388 569     929     The
+284.383 685     99      say
+277.804 116     380     Athens
+272.728 1658    498     him
+253.453 32      225     Peloponnesians
+240.513 430     39      Now
+
+Why put the word at the end?
+Because the words have variable length and everthing else is 
+generally same length. Meaning rearranging columns is pretty
+easy. 
+
+Some words may be due to translator choice.
+Example: Thou vs you. One translator just doesn't use 'thou'. 
+
+Can shuffle documents and create 'Fake' authors
+>>> shuffle_lists([1,2,3,4],[5,6,7,8])
+([3, 8, 4, 7], [6, 5, 1, 2])
+
+>>> (fake_herodotus, fake_thucydides) = shuffle_lists(herodotus_tokens, thucydides_tokens)
+>>> len(fake_herodotus)
+308780
+>>> len(fake_thucydides)
+204612
+>>> fake_herodotus[0:20]
+['laid', 'he', 'one', 'the', 'therefore', 'the', 'Scione', 'the', 'army', 'the', 'their', 'of', '149', 'can', 'against', 'heroes', 'of', 'parts', 'river', 'all']
+>>> fake_scores = score_differences(fake_herodotus, fake_thucydides)
+
+>>> print_nicely(fake_scores[0:10])
+12.472  29      4       owing
+12.278  9       22      married
+11.526  3       13      curse
+9.611   15      1       Kypselos
+9.515   12      23      host
+9.457   1       8       resembles
+9.457   1       8       measuring
+9.457   1       8       consists
+9.457   1       8       Nineveh
+9.435   4       13      search
+
+This output is much smaller than before. 
+Running it again.
+>>> (fake_herodotus, fake_thucydides) = shuffle_lists(herodotus_tokens, thucydides_tokens)
+>>> fake_scores = score_differences(fake_herodotus, fake_thucydides)
+>>> print_nicely(fake_scores[0:10])
+13.219  19      1       127
+12.714  1       10      encounter
+12.273  538     276     before
+12.201  77      88      alliance
+11.768  11      24      host
+11.526  3       13      trying
+11.11   2       11      observe
+10.31   23      3       united
+9.496   134     55      opinion
+9.435   4       13      statues
+
+This is the danger of multiple hypothesis. You are
+likely to get a hypothesis that is positively correlated
+over multiple tests.
