@@ -32,11 +32,29 @@ stable a word's neighbors are given this collection.
 1. Construct bootstrap samples of size 5 for the following groups using the
    bootstrap_sample method:
    (a) [1, 2, 3, 4, 5]
+        >>> bootstrap_sample([1,2,3,4,5],5)
+            array([4, 5, 2, 5, 3])
    (b) [0, 2, 0, 2, 2]
+        >>> bootstrap_sample([0,2,0,2,2],5)
+            array([2, 2, 0, 2, 0])   
    (c) [1, 1, 1, 7, 1]
+        >>> bootstrap_sample(c,5)
+            array([1, 1, 1, 7, 1])
+
    How do these samples differ from the original group? How much can a
    particular bootstrap sample deviate from the original? Include specific
    examples.
+
+   These samples differ from the original group because they are a approximation 
+   of the original group. The bootstrap method takes a list of items and then
+   returns a randomnly generated list with elements from the original. 
+   For example if the original group is [1,2] then a bootstrap sample could be 
+   [1,1],[2,2],[1,2], or [2,1]
+
+    Specifically the standard error over multiple approximations is defined by
+    SE_N(alpha) = sqrt(  (1/(N-1)) * sum [ alpha_hat_*_i - alpha_hat_mean ]^2  )
+    where alpha is an estimator, N is the number of bootstrap samples, and 
+    alpha_hat_*_i is the estimator of the ith bootstrap sample.
 
 2. Let's now examine how a measurement, in this case arithmetic mean, differs
    between a collection and its bootstrap samples. We'll be summarizing the
@@ -49,9 +67,24 @@ stable a word's neighbors are given this collection.
    original collection and the mean of the means of its bootstrap samples.
    Describe how these values differ.
 
+    
+
 3. How does the mean of bootstrap means change with respect to the "true" mean
    of the original collection as the bootstrap sample size is increased or 
    decreased?
+
+   As the sample size is increased the approximation theoretically should get 
+   closer and closer to the true mean of the original collection, and worse
+   as the sample size is decreased. Of course part of being in a mathematical 
+   field is question those results. Thus assuming {X,X_i, i>=1} is a sequence
+   of iid variables, X non-degenerate, on a complete probability space (omeg, F, P),
+   [Bickel, Freedman 1981] and [Singh 1981] proved that if the expectation E[X^2] < inf
+   then the statistic n^{1/2}(n^{-1}\hat{S}_n^{w}-\bar{X}_n(w)) converges
+   to the normal distribution for n>=1 for nearly all w \in omeg. Additionally
+   [Ahmed, Volodin 1999] also prove converge rates. 
+   https://projecteuclid.org/download/pdf_1/euclid.aos/1176345637
+   http://uregina.ca/~volodin/av.pdf
+
 
 4. Switching to word embeddings, write code to build a word embedding for a
    bootstrap sample of size n over a list of novels. Which words will have
