@@ -35,8 +35,8 @@ Record the output of dunning_score(...) here.
 would consider convincing evidence that two observed
 proportions are really different?
 
-If over 100 games a player has more than 95% of games then they are def better.
-People say score of ~1.3
+I originally said a score greater than 1. A good majority of
+the class said >~1.3 would be convincing evidence. 
 
 
 Now let's look at the difference between two Greek
@@ -97,10 +97,53 @@ How do the observed Dunning G scores compare to your expectation?
 176.974 125     311     country
 164.97  581     123     man
 
+
+The Dunning G scores are MUCH bigger than expected which definetly
+shows that the proportions are different.
+
+
 4. What are the most "surprising" words according to 
 the Dunning score? Search through the documents for examples.
 What did you learn about the content and the style of these
 two historians?
+
+The most "suprising" words according to the dunning score are
+975.544 3842    891     he
+830.17  1782    2780    their
+675.685 446     1146    Athenians
+639.223 641     1       thou
+613.622 227     796     you
+594.931 625     4       Persians
+519.779 67      464     allies
+Looking up the context of "he", "Athenians" and "allies"
+
+"he"
+Herotodus :
+    'He tried however to remove even those who lived in the lake and who had their dwellings'
+    'because he excessively feared the Persians'
+Thucydides:
+    'remembering that this is that very crisis in which he who lends aid is most a friend'
+    'just as he was, in the chamber, they brought him out of the temple'
+
+
+"Athenians"
+Herotodus :
+    'Equality 68 is an excellent thing, since the Athenians while they were ruled by despots were not better in war that any of those who dwelt about them'
+    'So the Athenians sent to Egina and demanded the images back; but the Eginetans said that they had nothing to do with the Athenians.
+Thucydides:
+    'the Athenians only holding a limited area round their camps'
+    'The Athenians now fell into great disorder and perplexity, so that it was not easy to get from one side'
+
+
+"allies"
+Herotodus :
+    'And while they were thus taking counsel, there came to their aid the Milesians and their allies'
+    'Many such acts of madness did he both to Persians and allies, remaining at Memphis'
+Thucydides:
+    'the Argives and independent allies to help them in getting what they came for'
+    'helped by none of our allies, and reduced to doubt the stability of our only hope, yourselves.'
+
+From looking at these, in my opinion Thucydides is a lot more pessimistic and a bit darker than Herodotus in his writings. 
 
 We're looking at about 5000 distinct tests, one for each
 word. Should we be worried? Let's simulate random
@@ -112,6 +155,19 @@ and `thucydides_tokens` lists as input. Record the length of
 all four lists here, and confirm that the new ones have
 the same length as the original `_tokens` lists.
 
+>>> (fake_herodotus, fake_thucydides) = shuffle_lists(herodotus_tokens, thucydides_tokens)
+>>> len(fake_herodotus)
+308780
+>>> len(fake_thucydides)
+204612
+>>> len(herodotus_tokens)
+308780
+>>> len(thucydides_tokens)
+204612
+
+Lengths confirmed!
+
+
 6. Now use the "fake" token lists to create `fake_scores`.
 Use `print_nicely()` and array slices (ie [:50], etc) to look
 at the range of Dunning scores. How do the "most significant" 
@@ -119,11 +175,34 @@ scores compare to your expectations about significance?
 Would you have been fooled if you didn't realize that
 these results were random?
 
+>>> fake_scores = score_differences(fake_herodotus, fake_thucydides)
+>>> print_nicely(fake_scores[0:10])
+12.472  29      4       owing
+12.278  9       22      married
+11.526  3       13      curse
+9.611   15      1       Kypselos
+9.515   12      23      host
+9.457   1       8       resembles
+9.457   1       8       measuring
+9.457   1       8       consists
+9.457   1       8       Nineveh
+9.435   4       13      search
+
+Even though they are smaller than before, they are still a lot greater than
+1.3, so they are still pretty convincing. 
+
+
 7. Thucydides writes "for it is the habit of humans to trust
 the things they desire to unexamined hope, but to confront
 the things they reject with the full force of reason." 
 How is this relevant to our discussions?
 
+This is relevant because we are always quick to reject experiments in which
+the results do not support our hypothesis and try to disprove them as much as 
+possible. On the other hand for experiments in which we get something that 
+supports out hypothesis we are much more trusting in this data. This is
+the danger of multiple hypothesis. You are likely to get a hypothesis that
+is positively correlated over multiple tests.
 """
 
 from collections import Counter
